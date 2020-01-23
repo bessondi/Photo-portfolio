@@ -1,0 +1,17 @@
+.overlay {
+  position: relative;
+  display: block;
+}
+
+.overlay:hover > .overlayDescription {
+  z-index: 2;
+  opacity: 0.8;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .column:nth-child(2),
+  .column:nth-child(4) {
+    display: none;
+  }
+}
