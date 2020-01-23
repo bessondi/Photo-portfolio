@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Photo-portfolio/static/css/main.1c9c1a92.chunk.css",
+    "main.js": "/Photo-portfolio/static/js/main.95e10bbb.chunk.js",
+    "main.js.map": "/Photo-portfolio/static/js/main.95e10bbb.chunk.js.map",
+    "runtime-main.js": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js",
+    "runtime-main.js.map": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js.map",
+    "static/js/2.ce3ff6e5.chunk.js": "/Photo-portfolio/static/js/2.ce3ff6e5.chunk.js",
+    "static/js/2.ce3ff6e5.chunk.js.map": "/Photo-portfolio/static/js/2.ce3ff6e5.chunk.js.map",
+    "index.html": "/Photo-portfolio/index.html",
+    "precache-manifest.c11c64acb7cf5940c87fbe77615cb112.js": "/Photo-portfolio/precache-manifest.c11c64acb7cf5940c87fbe77615cb112.js",
+    "service-worker.js": "/Photo-portfolio/service-worker.js",
+    "static/css/main.1c9c1a92.chunk.css.map": "/Photo-portfolio/static/css/main.1c9c1a92.chunk.css.map",
+    "static/js/2.ce3ff6e5.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.ce3ff6e5.chunk.js.LICENSE",
+    "static/media/App.css": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf",
+    "static/media/facebook.svg": "/Photo-portfolio/static/media/facebook.e62aabe2.svg",
+    "static/media/image_1.jpg": "/Photo-portfolio/static/media/image_1.d46a78a9.jpg",
+    "static/media/image_10.jpg": "/Photo-portfolio/static/media/image_10.c9c36e05.jpg",
+    "static/media/image_2.jpg": "/Photo-portfolio/static/media/image_2.ebf4e7f3.jpg",
+    "static/media/image_3.jpg": "/Photo-portfolio/static/media/image_3.bd75c75d.jpg",
+    "static/media/image_4.jpg": "/Photo-portfolio/static/media/image_4.e8ab38f8.jpg",
+    "static/media/image_5.jpg": "/Photo-portfolio/static/media/image_5.9671628b.jpg",
+    "static/media/image_6.jpg": "/Photo-portfolio/static/media/image_6.dff4d529.jpg",
+    "static/media/image_7.jpg": "/Photo-portfolio/static/media/image_7.e5ad5f8c.jpg",
+    "static/media/image_8.jpg": "/Photo-portfolio/static/media/image_8.f3686dbd.jpg",
+    "static/media/image_9.jpg": "/Photo-portfolio/static/media/image_9.bce04fdb.jpg",
+    "static/media/instagram.svg": "/Photo-portfolio/static/media/instagram.dedd2d7e.svg",
+    "static/media/me.jpg": "/Photo-portfolio/static/media/me.589796a1.jpg",
+    "static/media/telegram.svg": "/Photo-portfolio/static/media/telegram.033c5572.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff9fbecd.js",
+    "static/js/2.ce3ff6e5.chunk.js",
+    "static/css/main.1c9c1a92.chunk.css",
+    "static/js/main.95e10bbb.chunk.js"
+  ]
+}
