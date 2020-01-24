@@ -57,7 +57,7 @@ function About() {
     
     transition: all 0.3s ease;    
     &:hover {
-      color: orangered;
+      color: #5F23BC;
       transition: all 0.3s ease;    
     }
   `;
@@ -72,12 +72,14 @@ function About() {
   `;
   const Icon = styled.img`
     display: block;
-    width: 30px;
-    height: 30px;
-
-    //&:hover {
-    //  fill: purple   ;
-    //}
+    width: 35px;
+    height: 35px;
+    
+    transition: all 0.3s ease;  
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;  
+    }
   `;
   return (
       <Wrapper>
