@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2dbd1d39610508cee8e80860694f2730",
+    "revision": "6c59971313a63a14f0387cf5f0161f56",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "bced8c8d24c4aa66da60",
-    "url": "/Photo-portfolio/static/css/main.1c9c1a92.chunk.css"
+    "revision": "7a2f3b35f17b1a2c9512",
+    "url": "/Photo-portfolio/static/css/main.2eedf84b.chunk.css"
   },
   {
-    "revision": "f20fb3b12210d46da7ea",
-    "url": "/Photo-portfolio/static/js/2.ce3ff6e5.chunk.js"
+    "revision": "0eadb0ecacbff3b847ae",
+    "url": "/Photo-portfolio/static/js/2.2088c48f.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/Photo-portfolio/static/js/2.ce3ff6e5.chunk.js.LICENSE"
+    "url": "/Photo-portfolio/static/js/2.2088c48f.chunk.js.LICENSE"
   },
   {
-    "revision": "bced8c8d24c4aa66da60",
-    "url": "/Photo-portfolio/static/js/main.95e10bbb.chunk.js"
+    "revision": "7a2f3b35f17b1a2c9512",
+    "url": "/Photo-portfolio/static/js/main.44569075.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf"
   },
   {
-    "revision": "e62aabe26781613315e9abef7918ed58",
-    "url": "/Photo-portfolio/static/media/facebook.e62aabe2.svg"
+    "revision": "d99368ca4e133a9917838e76243e8cfb",
+    "url": "/Photo-portfolio/static/media/facebook.d99368ca.svg"
   },
   {
     "revision": "17f13e0144ded0ff9c50cf1bb12727a2",
@@ -196,15 +196,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/image_9.bce04fdb.jpg"
   },
   {
-    "revision": "dedd2d7e29365072dbb0e8afa29a0c9a",
-    "url": "/Photo-portfolio/static/media/instagram.dedd2d7e.svg"
+    "revision": "5b23a837268b09d0efa9e307023c1dae",
+    "url": "/Photo-portfolio/static/media/instagram.5b23a837.svg"
   },
   {
     "revision": "589796a1ecdbfceeb51af068b2418d3c",
     "url": "/Photo-portfolio/static/media/me.589796a1.jpg"
   },
   {
-    "revision": "033c5572d2c76779435ff37055cb7342",
-    "url": "/Photo-portfolio/static/media/telegram.033c5572.svg"
+    "revision": "b91cc43ec2a72c3e999aff767e2e0c76",
+    "url": "/Photo-portfolio/static/media/telegram.b91cc43e.svg"
   }
 ]);
