@@ -85,9 +85,8 @@ function MainPage() {
           `;
             // const Plug = styled.div`
             //   background-color: #ebebeb;
-            //   width: 100%;
-            //   max-width: 500px;
-            //   max-height: 700px;
+            //   width: 300px;
+            //   height: 400px;
             //   margin: 10px 0;
             //   border-radius: 10px;
             //   animation-duration: 1s;
@@ -102,6 +101,9 @@ function MainPage() {
                     <p>view</p>
                   </ImageDescription>
                   <Image src={images[id].picture} alt="Image"/>
+                  {/*<Plug/>*/}
+
+
                   {/* <Suspense fallback={ <Plug/> }>
                     <LazyLoad>
                     <Image src={images[id].picture} alt="Image"/> 

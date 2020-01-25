@@ -7,9 +7,9 @@ import Column from "./Column";
 
 // import {ContentData} from './ContentData'
 // import { Parallax } from 'react-scroll-parallax';
-import ParallaxImageRender from "./ParallaxImage";
+import ParallaxImageRender from "../ParallaxImage";
 
-import {ContentData} from './ContentData';
+import {ContentData} from '../ContentData';
 
 
 // class Main extends Component {

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 import Img from '../../img/me.jpg'
-import instagram from '../../img/instagram.svg'
-import facebook from '../../img/facebook.svg'
-import telegram from '../../img/telegram.svg'
+import instagram from '../../img/icons/instagram.svg'
+import facebook from '../../img/icons/facebook.svg'
+import telegram from '../../img/icons/telegram.svg'
 
 function About() {
 
@@ -72,8 +72,8 @@ function About() {
   `;
   const Icon = styled.img`
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     
     transition: all 0.3s ease;  
     &:hover {

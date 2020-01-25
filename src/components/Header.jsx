@@ -4,8 +4,10 @@ import { NavLink } from "react-router-dom";
 
 import styled from "styled-components";
 import s from "./Header.module.css";
+import NavSideBar from "./NavMenu/NavSideBar";
 
 function Header() {
+
   const randomColor = function getRandomColor() {
     let characters = "0123456789ABCDEF";
     let color = "#";
@@ -14,7 +16,6 @@ function Header() {
     }
     return color;
   };
-
   function getRandomNumber(low, high) {
     let r = Math.floor(Math.random() * (high - low + 1)) + low;
     return r;
@@ -72,7 +73,14 @@ function Header() {
       transform: translateX(5px);
     }
   `;
-  const Nav = styled.nav``;
+  const Nav = styled.nav`
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  `;
   const NavItem = styled.span`
     display: inline-block;
     font-size: 1.7rem;
@@ -86,15 +94,11 @@ function Header() {
       transform: translateX(-5px);
     }
   `;
-  // const NavigationBar = styled.div`
-  //       width: 35px;
-  //       height: 35px;
-  //       background: black;
-  //   `;
 
   return (
     <Header>
       <Wrapper>
+
         <PageTitle>
           <Link to="/">
             <Title>
@@ -119,12 +123,26 @@ function Header() {
             </Title>
           </Link>
         </PageTitle>
+
+        <NavSideBar/>
+
         <Nav>
+          <NavLink to="/beauty" activeClassName={s.activeLinkAbout}>
+            <NavItem>beauty</NavItem>
+          </NavLink>
+
+          <NavLink to="/product" activeClassName={s.activeLinkAbout}>
+            <NavItem>product</NavItem>
+          </NavLink>
+
+          <NavLink to="/portrait" activeClassName={s.activeLinkAbout}>
+            <NavItem>portrait</NavItem>
+          </NavLink>
+
           <NavLink to="/about" activeClassName={s.activeLinkAbout}>
             <NavItem>about / contact</NavItem>
           </NavLink>
         </Nav>
-        {/*<NavigationBar/>*/}
       </Wrapper>
     </Header>
   );

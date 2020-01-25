@@ -10,9 +10,8 @@ function Footer() {
         left: 0;
         width: 100%;
         height: 20px;
-        /* border-top: 1px solid gray;     */
         background-color: #fff;
-        z-index: 100;
+        //z-index: 5;
     `;
 
     return (

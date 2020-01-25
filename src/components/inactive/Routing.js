@@ -1,9 +1,9 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
-import Footer from './Footer';
+import Footer from '../Footer';
 import Main from "./Main";
-import Header from './Header';
+import Header from '../Header';
 
 
 
