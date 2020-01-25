@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainPage from "./components/mainPage/MainPage";
 import About from "./components/about/About";
+import Page404 from "./components/Page404";
 
 
 function App() {
@@ -16,6 +17,12 @@ function App() {
               <Route path='/' exact component={MainPage} />
               <Route path='/about' component={About} />
 
+              {/* <Route path='/beauty' component={Beauty} />
+              <Route path='/product' component={Product} />
+              <Route path='/portrait' component={Portrait} />
+              <Route path='/models' component={Models} /> */}
+
+              <Route component={Page404}/>
           </Switch>
           <Footer/>
       </div>

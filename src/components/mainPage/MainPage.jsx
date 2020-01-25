@@ -1,7 +1,7 @@
 import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import styled from "styled-components";
-
+// import LazyLoad from 'react-lazy-load';
 import s from "./MainPage.module.css";
 import {ContentData} from "../ContentData";
 
@@ -53,10 +53,12 @@ function MainPage() {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            /* background-color: #ebebeb; */
             width: 100%;
             max-width: 500px;
             max-height: 700px;
             margin: 10px 0;
+            border-radius: 10px;
             animation-duration: 1s;
             animation-name: showPic;
           `;
@@ -81,6 +83,17 @@ function MainPage() {
             margin: 10px 0;
             border-bottom: 1px solid black;
           `;
+            // const Plug = styled.div`
+            //   background-color: #ebebeb;
+            //   width: 100%;
+            //   max-width: 500px;
+            //   max-height: 700px;
+            //   margin: 10px 0;
+            //   border-radius: 10px;
+            //   animation-duration: 1s;
+            //   animation-name: showPic;
+            // `;
+        
             return (
                 <Link className={s.overlay} to={images[id].path}>
                   <ImageDescription className={s.overlayDescription}>
@@ -89,9 +102,11 @@ function MainPage() {
                     <p>view</p>
                   </ImageDescription>
                   <Image src={images[id].picture} alt="Image"/>
-                  {/*<Suspense fallback={ <Box/> }>*/}
-                  {/*<LazyImage src={images[id].picture} alt="Image"/>*/}
-                  {/*</Suspense>*/}
+                  {/* <Suspense fallback={ <Plug/> }>
+                    <LazyLoad>
+                    <Image src={images[id].picture} alt="Image"/> 
+                    </LazyLoad>
+                  </Suspense> */}
                 </Link>
             );
           };
