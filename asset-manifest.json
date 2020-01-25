@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Photo-portfolio/static/css/main.fc089c71.chunk.css",
-    "main.js": "/Photo-portfolio/static/js/main.5d2177d0.chunk.js",
-    "main.js.map": "/Photo-portfolio/static/js/main.5d2177d0.chunk.js.map",
+    "main.css": "/Photo-portfolio/static/css/main.2eedf84b.chunk.css",
+    "main.js": "/Photo-portfolio/static/js/main.44569075.chunk.js",
+    "main.js.map": "/Photo-portfolio/static/js/main.44569075.chunk.js.map",
     "runtime-main.js": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js",
     "runtime-main.js.map": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js.map",
     "static/js/2.2088c48f.chunk.js": "/Photo-portfolio/static/js/2.2088c48f.chunk.js",
     "static/js/2.2088c48f.chunk.js.map": "/Photo-portfolio/static/js/2.2088c48f.chunk.js.map",
     "index.html": "/Photo-portfolio/index.html",
-    "precache-manifest.83f7b1bd620fae8664dd9db68bc04d08.js": "/Photo-portfolio/precache-manifest.83f7b1bd620fae8664dd9db68bc04d08.js",
+    "precache-manifest.4b20bb8c4494602634d36ed4496772c0.js": "/Photo-portfolio/precache-manifest.4b20bb8c4494602634d36ed4496772c0.js",
     "service-worker.js": "/Photo-portfolio/service-worker.js",
-    "static/css/main.fc089c71.chunk.css.map": "/Photo-portfolio/static/css/main.fc089c71.chunk.css.map",
+    "static/css/main.2eedf84b.chunk.css.map": "/Photo-portfolio/static/css/main.2eedf84b.chunk.css.map",
     "static/js/2.2088c48f.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.2088c48f.chunk.js.LICENSE",
     "static/media/App.css": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf",
     "static/media/facebook.svg": "/Photo-portfolio/static/media/facebook.d99368ca.svg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.ff9fbecd.js",
     "static/js/2.2088c48f.chunk.js",
-    "static/css/main.fc089c71.chunk.css",
-    "static/js/main.5d2177d0.chunk.js"
+    "static/css/main.2eedf84b.chunk.css",
+    "static/js/main.44569075.chunk.js"
   ]
 }
