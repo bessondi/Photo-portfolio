@@ -1,10 +1,11 @@
 import React from "react";
-// import {HashLink as Link} from 'react-router-hash-link';
+import {HashLink as Link} from 'react-router-hash-link';
 import styled from "styled-components";
 
 const Page404 = () => {
   const Wrapper = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
@@ -17,10 +18,17 @@ const Page404 = () => {
     animation-duration: 1s;
     animation-name: showPic;  
   `;
+  const BackToHome = styled.h2`
+    color: #444;
+    margin: 0 auto;
+    animation-duration: 1s;
+    animation-name: showPic;  
+  `;
 
   return (
     <Wrapper>
       <Text>This page will appear soon..</Text>
+      <Link to='/'><BackToHome>back to the main page</BackToHome></Link>
     </Wrapper>
   );
 };
