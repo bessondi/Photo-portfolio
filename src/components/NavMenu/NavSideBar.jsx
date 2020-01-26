@@ -77,7 +77,7 @@ class NavSideBar extends Component {
     return (
         <React.Fragment>
 
-          <div className={s.header__wrapper__navBtn}>
+          <div className={s.navMenuBtn}>
             <button className={this.state.activeMenu
                 ? `${s.menuBtn} ${s.menuBtn_active}`
                 : `${s.menuBtn}`}
@@ -105,7 +105,7 @@ class NavSideBar extends Component {
 
           <div className={this.state.activeMenu
               ? `${s.rightMenuSection_active}`
-              : `${s.RightMenuSection_closed}`}
+              : `${s.rightMenuSection_closed}`}
           >
             <Contacts
                 // className={this.state.activeMenu
