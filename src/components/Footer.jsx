@@ -11,7 +11,6 @@ function Footer() {
         width: 100%;
         height: 20px;
         background-color: #fff;
-        //z-index: 5;
     `;
 
     return (

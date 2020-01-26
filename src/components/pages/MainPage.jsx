@@ -122,7 +122,7 @@ function MainPage() {
           flex-flow: column nowrap;
           padding: 0 10px;
           justify-content: flex-start;
-          animation: ${props.slide} ${props.speed} linear infinite;
+           animation: ${props.slide} ${props.speed} linear infinite;
         `;
         return (
             <Column className={`${s.column}`}>
