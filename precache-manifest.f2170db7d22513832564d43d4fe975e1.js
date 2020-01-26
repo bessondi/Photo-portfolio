@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c59971313a63a14f0387cf5f0161f56",
+    "revision": "faad01beda8533c5a6a7e82b59ad2915",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "7a2f3b35f17b1a2c9512",
-    "url": "/Photo-portfolio/static/css/main.2eedf84b.chunk.css"
+    "revision": "9f02511807660943636d",
+    "url": "/Photo-portfolio/static/css/main.5a32ef98.chunk.css"
   },
   {
-    "revision": "0eadb0ecacbff3b847ae",
-    "url": "/Photo-portfolio/static/js/2.2088c48f.chunk.js"
+    "revision": "06c5d5fa27f05d6ce198",
+    "url": "/Photo-portfolio/static/js/2.40ac5245.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/Photo-portfolio/static/js/2.2088c48f.chunk.js.LICENSE"
+    "url": "/Photo-portfolio/static/js/2.40ac5245.chunk.js.LICENSE"
   },
   {
-    "revision": "7a2f3b35f17b1a2c9512",
-    "url": "/Photo-portfolio/static/js/main.44569075.chunk.js"
+    "revision": "9f02511807660943636d",
+    "url": "/Photo-portfolio/static/js/main.4f93e81d.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d99368ca4e133a9917838e76243e8cfb",
     "url": "/Photo-portfolio/static/media/facebook.d99368ca.svg"
+  },
+  {
+    "revision": "582d3e4a04544b392be96bdc08413459",
+    "url": "/Photo-portfolio/static/media/facebook_white.582d3e4a.svg"
   },
   {
     "revision": "17f13e0144ded0ff9c50cf1bb12727a2",
@@ -200,11 +204,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/instagram.5b23a837.svg"
   },
   {
+    "revision": "47f88e10144b3ca651584f72d0fddd2b",
+    "url": "/Photo-portfolio/static/media/instagram_white.47f88e10.svg"
+  },
+  {
     "revision": "589796a1ecdbfceeb51af068b2418d3c",
     "url": "/Photo-portfolio/static/media/me.589796a1.jpg"
   },
   {
     "revision": "b91cc43ec2a72c3e999aff767e2e0c76",
     "url": "/Photo-portfolio/static/media/telegram.b91cc43e.svg"
+  },
+  {
+    "revision": "c79a0df0bdad951983b81434a6990051",
+    "url": "/Photo-portfolio/static/media/telegram_white.c79a0df0.svg"
   }
 ]);
