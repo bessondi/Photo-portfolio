@@ -24,6 +24,7 @@ function Header() {
   const Word = styled.ul`
     display: flex;
     flex-flow: row nowrap;
+    
   `;
   const Letter = styled.li`
     transition: all 2.5s ease;
@@ -32,7 +33,14 @@ function Header() {
       transform: scale(1.2);
       color: ${randomColor};
     }
+    @media screen and (max-width: 992px) {
+      &:hover {
+        color: #000;
+        transform: scale(1);
+      }
+    }
   `;
+
   const Header = styled.header`
     display: flex;
     align-items: center;
@@ -44,7 +52,11 @@ function Header() {
     /* border-bottom: 1px solid gray; */
     background-color: #fff;
     z-index: 100;
+    @media screen and (max-width: 576px) {
+      height: 80px;
+    }
   `;
+
   const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
@@ -52,17 +64,18 @@ function Header() {
     width: 100%;
     padding: 10px 20px;
   `;
+
   const PageTitle = styled.div`
     display: flex;
     align-items: center;
   `;
+
   const Title = styled.div`
     font-size: 2.5rem;
     font-weight: 900;
     //letter-spacing: -1px;
     line-height: 90%;
     font-family: "Circe Extra Bold", sans-serif;
-
     & > :last-child {
       position: relative;
       left: 12px;
@@ -72,7 +85,16 @@ function Header() {
       transition: all 0.5s ease;
       transform: translateX(5px);
     }
+    @media screen and (max-width: 576px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 992px) {
+      &:hover {
+        transform: translateX(0);
+      }
+    }
   `;
+
   const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
@@ -81,6 +103,7 @@ function Header() {
       display: none;
     }
   `;
+
   const NavItem = styled.span`
     display: inline-block;
     font-size: 1.7rem;

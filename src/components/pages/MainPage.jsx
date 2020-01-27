@@ -34,7 +34,11 @@ function MainPage() {
       max-height: calc(100vh - 100px);
       width: 100%;
       overflow: hidden;
+      @media screen and (max-width: 576px) {
+        max-height: calc(100vh - 80px);
+      }
     `;
+
     const BrickColumns = () => {
       const FourColumns = styled.div`
         display: flex;
@@ -76,12 +80,19 @@ function MainPage() {
             height: 100%;
             transition: all 0.3s ease-in-out;
             opacity: 0;
+            @media screen and (max-width: 992px) {
+              display: none;
+            }
           `;
             const Separator = styled.div`
             width: 30px;
             height: 1px;
             margin: 10px 0;
             border-bottom: 1px solid black;
+            
+            @media screen and (max-width: 992px) {
+              display: none;
+            }
           `;
             // const Plug = styled.div`
             //   background-color: #ebebeb;
@@ -101,12 +112,10 @@ function MainPage() {
                     <p>view</p>
                   </ImageDescription>
                   <Image src={images[id].picture} alt="Image"/>
-                  {/*<Plug/>*/}
-
 
                   {/* <Suspense fallback={ <Plug/> }>
                     <LazyLoad>
-                    <Image src={images[id].picture} alt="Image"/> 
+                      <Image src={images[id].picture} alt="Image"/> 
                     </LazyLoad>
                   </Suspense> */}
                 </Link>
@@ -122,7 +131,7 @@ function MainPage() {
           flex-flow: column nowrap;
           padding: 0 10px;
           justify-content: flex-start;
-           animation: ${props.slide} ${props.speed} linear infinite;
+          animation: ${props.duration} linear 0.01s ${props.slide} infinite;
         `;
         return (
             <Column className={`${s.column}`}>
@@ -133,10 +142,10 @@ function MainPage() {
 
       return (
           <FourColumns>
-            <GridColumn slide="slideUp" speed="100s" column={firstColumnImages}/>
-            <GridColumn slide="slideDown" speed="130s" column={secondColumnImages}/>
-            <GridColumn slide="slideUp" speed="150s" column={thirdColumnImages}/>
-            <GridColumn slide="slideDown" speed="90s" column={fourthColumnImages}/>
+            <GridColumn slide="slideUp" duration="100s" column={firstColumnImages}/>
+            <GridColumn slide="slideDown" duration="130s" column={secondColumnImages}/>
+            <GridColumn slide="slideUp" duration="150s" column={thirdColumnImages}/>
+            <GridColumn slide="slideDown" duration="90s" column={fourthColumnImages}/>
           </FourColumns>
       );
     };

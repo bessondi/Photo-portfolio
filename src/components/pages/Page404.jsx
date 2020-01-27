@@ -15,6 +15,7 @@ const Page404 = () => {
   const Text = styled.h1`
     color: #888;
     margin: 0 auto;
+    text-align: center;
     animation-duration: 1s;
     animation-name: showPic;  
   `;
@@ -27,8 +28,9 @@ const Page404 = () => {
 
   return (
     <Wrapper>
-      <Text>This page will appear soon..</Text>
-      <Link to='/'><BackToHome>back to the main page</BackToHome></Link>
+      <Text>This page will appear soon..</Text> 
+      <br/>
+      <Link to='/'><BackToHome>Back to the main page</BackToHome></Link>
     </Wrapper>
   );
 };
