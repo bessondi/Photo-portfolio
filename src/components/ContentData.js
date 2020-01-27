@@ -1,3 +1,4 @@
+// crop size
 import image1 from "../img/thumbnails/beauty/image_8.jpg";
 import image2 from "../img/thumbnails/beauty/image_1.jpg";
 import image3 from "../img/thumbnails/beauty/image_2.jpg";
@@ -6,8 +7,6 @@ import image5 from "../img/thumbnails/beauty/image_5.jpg";
 import image6 from "../img/thumbnails/beauty/image_7.jpg";
 import image7 from "../img/thumbnails/beauty/image_6.jpg";
 import image8 from "../img/thumbnails/beauty/image_3.jpg";
-// import image9 from "../img/thumbnails/beauty/image_.jpg";
-// import image10 from "../img/thumbnails/beauty/image_.jpg";
 
 import image2_1 from "../img/thumbnails/product/image_29.jpg";
 import image2_2 from "../img/thumbnails/product/image_31.jpg";
@@ -41,6 +40,28 @@ import image4_7 from "../img/thumbnails/models/image_2.jpg";
 import image4_8 from "../img/thumbnails/models/image_8.jpg";
 import image4_9 from "../img/thumbnails/models/image_9.jpg";
 import image4_10 from "../img/thumbnails/models/image_10.jpg";
+
+
+// full size
+import beautyImage1 from "../img/fullsize/beauty/image_1.jpg";
+import beautyImage2 from "../img/fullsize/beauty/image_2.jpg";
+import beautyImage3 from "../img/fullsize/beauty/image_3.jpg";
+import beautyImage4 from "../img/fullsize/beauty/image_4.jpg";
+import beautyImage5 from "../img/fullsize/beauty/image_5.jpg";
+import beautyImage6 from "../img/fullsize/beauty/image_6.jpg";
+import beautyImage7 from "../img/fullsize/beauty/image_7.jpg";
+import beautyImage8 from "../img/fullsize/beauty/image_8.jpg";
+
+// import productImage1 from "../img/fullsize/product/image_1.jpg";
+// import productImage2 from "../img/fullsize/product/image_2.jpg";
+// import productImage3 from "../img/fullsize/product/image_3.jpg";
+// import productImage4 from "../img/fullsize/product/image_4.jpg";
+// import productImage5 from "../img/fullsize/product/image_5.jpg";
+// import productImage6 from "../img/fullsize/product/image_6.jpg";
+// import productImage7 from "../img/fullsize/product/image_7.jpg";
+// import productImage8 from "../img/fullsize/product/image_8.jpg";
+// import productImage9 from "../img/fullsize/product/image_9.jpg";
+// import productImage10 from "../img/fullsize/product/image_10.jpg";
 
 
 export const ContentData = {
@@ -93,18 +114,6 @@ export const ContentData = {
             'description': '8',
             'path': '/beauty'
         },
-        // {
-        //     'index': 8,
-        //     'picture': image9,
-        //     'description': '9',
-        //     'path': '/beauty'
-        // },
-        // {
-        //     'index': 9,
-        //     'picture': image10,
-        //     'description': '10',
-        //     'path': '/beauty'
-        // }
     ],
     'secondColumnImages': [
         {
@@ -291,5 +300,55 @@ export const ContentData = {
             'description': '10',
             'path': '/models-tests'
         }
+    ],
+    'beautyFullSize': [
+        {
+            'index': 0,
+            'picture': beautyImage1,
+            'description': '1',
+            'path': '/beauty'
+        },
+        {
+            'index': 1,
+            'picture': beautyImage2,
+            'description': '2',
+            'path': '/beauty'
+        },
+        {
+            'index': 2,
+            'picture': beautyImage3,
+            'description': '3',
+            'path': '/beauty'
+        },
+        {
+            'index': 3,
+            'picture': beautyImage4,
+            'description': '4',
+            'path': '/beauty'
+        },
+        {
+            'index': 4,
+            'picture': beautyImage5,
+            'description': '5',
+            'path': '/beauty'
+        },
+        {
+            'index': 5,
+            'picture': beautyImage6,
+            'description': '6',
+            'path': '/beauty'
+        },
+        {
+            'index': 6,
+            'picture': beautyImage7,
+            'description': '7',
+            'path': '/beauty'
+        },
+        {
+            'index': 7,
+            'picture': beautyImage8,
+            'description': '8',
+            'path': '/beauty'
+        },
     ],
 };

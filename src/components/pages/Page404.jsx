@@ -22,6 +22,7 @@ const Page404 = () => {
   const BackToHome = styled.h2`
     color: #444;
     margin: 0 auto;
+    text-align: center;
     animation-duration: 1s;
     animation-name: showPic;  
   `;

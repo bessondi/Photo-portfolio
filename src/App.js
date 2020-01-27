@@ -8,6 +8,8 @@ import MainPage from "./components/pages/MainPage";
 import About from "./components/pages/About";
 import Page404 from "./components/pages/Page404";
 
+import BeautyCollection from "./components/pages/BeautyCollection";
+
 
 function App() {
   return (
@@ -15,13 +17,13 @@ function App() {
           <Header/>
           <Switch>
               <Route path='/' exact component={MainPage} />
+
+              <Route path='/beauty' component={BeautyCollection} />
+              {/* <Route path='/product' component={Product} /> */}
+              {/* <Route path='/portrait' component={Portrait} /> */}
+              {/* <Route path='/models' component={Models} /> */}
+
               <Route path='/about' component={About} />
-
-              {/* <Route path='/beauty' component={Beauty} />
-              <Route path='/product' component={Product} />
-              <Route path='/portrait' component={Portrait} />
-              <Route path='/models' component={Models} /> */}
-
               <Route component={Page404}/>
           </Switch>
           <Footer/>

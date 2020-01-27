@@ -81,12 +81,11 @@
     position: fixed;
     width: 50%;
     height: 100vh;
-    background: #000;
+    background:rgba(0,0,0,.9);
     top: 0;
     left: 0;
     margin: auto;
     /*overflow: auto;*/
-    opacity: 0.9;
     animation-duration: 1s;
     animation-name: showLeftSection;
     transition: all 0.3s ease-in-out;
@@ -98,11 +97,10 @@
     width: 50%;
     height: 100vh;
     /*background: rgba(255,108,0,.9);*/
-    background: #5f23bc;
+    background: rgba(95,35,188,.9);
     bottom: 0;
     right: 0;
     margin: auto;
-    opacity: 0.9;
     animation-duration: 1s;
     animation-name: showRightSection;
     transition: all 0.3s ease-in-out;
@@ -115,21 +113,21 @@
 
   @keyframes showLeftSection {
     from {
-      opacity: 0;
+      /* opacity: 0; */
       top: -100%;
     }
     to {
-      opacity: 0.9;
+      /* opacity: 0.9; */
       top: 0;
     }
   }
   @keyframes showRightSection {
     from {
-      opacity: 0;
+      /* opacity: 0; */
       bottom: -100%;
     }
     to {
-      opacity: 0.9;
+      /* opacity: 0.9; */
       bottom: 0;
     }
   }
@@ -137,21 +135,21 @@
 
   @keyframes hideLeftSection {
     from {
-      opacity: 0.9;
+      /* opacity: 0.9; */
       top: 0;
     }
     to {
-      opacity: 0;
+      /* opacity: 0; */
       top: -100%;
     }
   }
   @keyframes hideRightSection {
     from {
-      opacity: 0;
+      /* opacity: 0; */
       bottom: -100%;
     }
     to {
-      opacity: 0.9;
+      /* opacity: 0.9; */
       bottom: 0;
     }
   }

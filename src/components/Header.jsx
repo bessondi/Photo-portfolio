@@ -17,9 +17,10 @@ function Header() {
     return color;
   };
   function getRandomNumber(low, high) {
-    let r = Math.floor(Math.random() * (high - low + 1)) + low;
-    return r;
+    let randomNum = Math.floor(Math.random() * (high - low + 1)) + low;
+    return randomNum;
   }
+
 
   const Word = styled.ul`
     display: flex;
@@ -150,19 +151,19 @@ function Header() {
         <NavSideBar/>
 
         <Nav>
-          <NavLink to="/beauty" activeClassName={s.activeLinkAbout}>
+          <NavLink to="/beauty" activeClassName={s.activeLink}>
             <NavItem>beauty</NavItem>
           </NavLink>
 
-          <NavLink to="/product" activeClassName={s.activeLinkAbout}>
+          <NavLink to="/product" activeClassName={s.activeLink}>
             <NavItem>product</NavItem>
           </NavLink>
 
-          <NavLink to="/portrait" activeClassName={s.activeLinkAbout}>
+          <NavLink to="/portrait" activeClassName={s.activeLink}>
             <NavItem>portrait</NavItem>
           </NavLink>
 
-          <NavLink to="/about" activeClassName={s.activeLinkAbout}>
+          <NavLink to="/about" activeClassName={s.activeLink}>
             <NavItem>about / contact</NavItem>
           </NavLink>
         </Nav>
