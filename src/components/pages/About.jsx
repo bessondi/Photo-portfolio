@@ -90,7 +90,7 @@ function About() {
             desire, and lifelong experience.<br/><br/>
             Based in Russia, St. Petersburg / worldwide available.<br/><br/>
             Dmitry accessible for commercial and editorial assignments and can be contacted via email <Mail
-                href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud.com</Mail><br/>or use social media:
+                href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud.com</Mail><br/>or social media:
           </Description>
 
           <SocialMedia>
