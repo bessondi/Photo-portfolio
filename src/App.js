@@ -8,25 +8,28 @@ import MainPage from "./components/pages/MainPage";
 import About from "./components/pages/About";
 import Page404 from "./components/pages/Page404";
 
-import BeautyCollection from "./components/pages/BeautyCollection";
+import {
+  BeautyCollection,
+  ProductCollection,
+  PortraitCollection,
+  ModelsCollection
+} from "./components/pages/Collections";
 
 
-function App() {
+export default function App() {
   return (
       <div className="app">
-          <Header/>
-          <Switch>
-              <Route path='/' exact component={MainPage} />
-
-              <Route path='/beauty' component={BeautyCollection} />
-              {/* <Route path='/product' component={Product} /> */}
-              {/* <Route path='/portrait' component={Portrait} /> */}
-              {/* <Route path='/models' component={Models} /> */}
-
-              <Route path='/about' component={About} />
-              <Route component={Page404}/>
-          </Switch>
-          <Footer/>
+        <Header/>
+        <Switch>
+          <Route path='/' exact component={MainPage}/>
+          <Route path='/beauty' component={BeautyCollection}/>
+          <Route path='/product-photography' component={ProductCollection}/>
+          <Route path='/portraits' component={PortraitCollection}/>
+          <Route path='/models-tests' component={ModelsCollection}/>
+          <Route path='/about' component={About}/>
+          <Route component={Page404}/>
+        </Switch>
+        <Footer/>
       </div>
   );
 }
@@ -90,8 +93,6 @@ function App() {
 //     </Wrapper>
 //   );
 // }
-
-export default App;
 
 
 // {

@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-// import {HashLink as Link} from 'react-router-hash-link';
 import styled from "styled-components";
 
-import Slider from "./Slider";
-
-// import {ContentData} from "../ContentData";
 
 class ImageViewer extends Component {
   constructor(props) {
@@ -15,7 +11,7 @@ class ImageViewer extends Component {
     };
   }
 
-  	prevImg = () => {
+  prevImg = () => {
 				let newIndex = this.state.image.index - 1;
   			if (newIndex < 0) {
   					this.setState({
@@ -26,7 +22,7 @@ class ImageViewer extends Component {
   							image: this.props.collection[newIndex]
   					})
   			}
-  	}
+  	};
 
   nextImg = () => {
 		let newIndex = this.state.image.index + 1;
@@ -43,64 +39,59 @@ class ImageViewer extends Component {
 
   render() {
     // console.log(this.state.image);
-		console.log(this.state.collection.length);
+		// console.log(this.state.collection.length);
 
     const Wrapper = styled.div`
       display: flex;
       width: 100%;
       height: 100%;
-      /* display: grid; */
-      /* grid-gap: 20px;
-      grid-template-rows: repeat(3, auto);
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas:
-        ". . ."
-        ". photo ."
-        ". . ."; */
-    `;
-    // const Image = styled.img`
-    //   grid-area: photo;
-    //   margin: auto;
-    //   display: block;
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   max-width: 250px;
-    //   max-height: 250px;
-    //   border-radius: 50%;
-    //   animation-duration: 1s;
-    //   animation-name: showPic;
-		// `;
-		
-		const PrevImageBtn = styled.div`
-      /* grid-area: nextBtn; */
-      display: flex;
-      position: fixed;
-      top: 50%;
-      left: 20px;
-      width: 20px;
-      height: 20px;
-			background-color: gray;
-			border-radius: 50%;
     `;
 
-    const NextImageBtn = styled.div`
+    const Image = styled.img`
+      margin: auto;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
+      animation-duration: 1s;
+      animation-name: showPic;
+    `;
+
+    const ImageChanger = styled.div`
       /* grid-area: nextBtn; */
       display: flex;
       position: fixed;
       top: 50%;
-      right: 20px;
       width: 20px;
       height: 20px;
-			background-color: gray;
+			background-color: darkgray;
+			border: 1px solid #fff;
 			border-radius: 50%;
-    `;
+      transition: all .4s ease;
+        ${ props => {
+          if (props.leftSide) {
+              return `${props.leftSide}`;
+          } else if (props.rightSide) {
+              return `${props.rightSide}`;
+          }
+        }}
+        &:hover {
+          width: 25px;
+          height: 25px;
+          background-color: gray;
+          transition: all .4s ease;
+          transform: translateY(-2px);
+          cursor: pointer;
+        }
+      `;
 
     return (
       <Wrapper>
-				<PrevImageBtn onClick={() => this.prevImg()} />
-        <Slider image={this.state.image.picture} />
-        <NextImageBtn onClick={() => this.nextImg()} />
+        <Image src={this.state.image.picture} alt="Image" />
+        <ImageChanger onClick={() => this.prevImg()} leftSide='left: 20px;'/>
+        <ImageChanger onClick={() => this.nextImg()} rightSide='right: 20px;'/>
       </Wrapper>
     );
   }

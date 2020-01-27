@@ -99,7 +99,7 @@ function Header() {
   const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
-    width: 600px;
+    width: 700px;
     @media screen and (max-width: 992px) {
       display: none;
     }
@@ -107,7 +107,7 @@ function Header() {
 
   const NavItem = styled.span`
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: "Circe Bold", sans-serif;
 
@@ -155,12 +155,16 @@ function Header() {
             <NavItem>beauty</NavItem>
           </NavLink>
 
-          <NavLink to="/product" activeClassName={s.activeLink}>
+          <NavLink to="/product-photography" activeClassName={s.activeLink}>
             <NavItem>product</NavItem>
           </NavLink>
 
-          <NavLink to="/portrait" activeClassName={s.activeLink}>
+          <NavLink to="/portraits" activeClassName={s.activeLink}>
             <NavItem>portrait</NavItem>
+          </NavLink>
+
+          <NavLink to="/models-tests" activeClassName={s.activeLink}>
+            <NavItem>models tests</NavItem>
           </NavLink>
 
           <NavLink to="/about" activeClassName={s.activeLink}>

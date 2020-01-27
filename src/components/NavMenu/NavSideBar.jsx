@@ -25,10 +25,10 @@ class NavSideBar extends Component {
   render() {
 
     const List = styled.ul`
-        display: flex;
-        margin: auto;
-        flex-flow: column nowrap;
-        align-content: center;
+      display: flex;
+      margin: auto;
+      flex-flow: column nowrap;
+      align-content: center;
     `;
     const ListItems = styled.li`
       /* padding: 10px 0; */
@@ -49,55 +49,55 @@ class NavSideBar extends Component {
     `;
 
     const Contacts = styled.div`
-        display: flex;
-        margin: auto;
-        flex-flow: column nowrap;
-        align-content: center;
-        justify-content: space-between;
-        height: 180px;
+      display: flex;
+      margin: auto;
+      flex-flow: column nowrap;
+      align-content: center;
+      justify-content: space-between;
+      height: 180px;
     `;
     const ContactsTitle = styled.p`
-        font-size: 3rem;
-        font-family: "Circe Extra Bold", sans-serif;
-        color: #fff;
-        text-align: center;
+      font-size: 3rem;
+      font-family: "Circe Extra Bold", sans-serif;
+      color: #fff;
+      text-align: center;
+      transition: all 0.3s ease;  
+      &:hover {
+        transform: scale(1.05);
         transition: all 0.3s ease;  
-        &:hover {
-          transform: scale(1.05);
-          transition: all 0.3s ease;  
-        }
+      }
 
-        @media screen and (max-width: 576px) {
-          font-size: 2rem;
-        }
+      @media screen and (max-width: 576px) {
+        font-size: 2rem;
+      }
     `;
     const Mail = styled.a`
-        font-size: 1.4rem;
-        color: #fff;
-        margin-top: -15px;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-top: -15px;
+      transition: all 0.3s ease;  
+      &:hover {
+        transform: scale(1.05);
         transition: all 0.3s ease;  
-    &:hover {
-      transform: scale(1.05);
-      transition: all 0.3s ease;  
-    }
-  `;
+      }
+    `;
     const SocialMedia = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    fill: #fff;
-  `;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      fill: #fff;
+    `;
     const Icon = styled.img`
-    display: block;
-    width: 50px;
-    height: 50px;
-    
-    transition: all 0.3s ease;  
-    &:hover {
-      transform: scale(1.1);
+      display: block;
+      width: 50px;
+      height: 50px;
+      
       transition: all 0.3s ease;  
-    }
-  `;
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;  
+      }
+    `;
     return (
         <React.Fragment>
 
