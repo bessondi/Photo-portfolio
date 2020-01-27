@@ -31,14 +31,18 @@ class NavSideBar extends Component {
         align-content: center;
     `;
     const ListItems = styled.li`
-      padding: 10px 0;
-        
+      /* padding: 10px 0; */
       &>a {
         font-size: 3rem;
         font-family: "Circe Extra Bold", sans-serif;
         color: #fff;
-        text-decoration: none;
+        /* text-decoration: none; */
+
+        @media screen and (max-width: 576px) {
+          font-size: 2rem;
+        }
       }
+
       &>a:hover {
         color: #5f23bc;
       }
@@ -50,12 +54,32 @@ class NavSideBar extends Component {
         flex-flow: column nowrap;
         align-content: center;
         justify-content: space-between;
-        height: 150px;
+        height: 180px;
+    `;
+    const ContactsTitle = styled.p`
+        font-size: 3rem;
+        font-family: "Circe Extra Bold", sans-serif;
+        color: #fff;
+        text-align: center;
+        transition: all 0.3s ease;  
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.3s ease;  
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 2rem;
+        }
     `;
     const Mail = styled.a`
         font-size: 1.4rem;
-        font-family: "Circe Bold", sans-serif;
         color: #fff;
+        margin-top: -15px;
+        transition: all 0.3s ease;  
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;  
+    }
   `;
     const SocialMedia = styled.div`
     display: flex;
@@ -112,6 +136,7 @@ class NavSideBar extends Component {
                 // ? `${s.listItems_active}`
                 // : `${s.listItems}`}
             >
+              <Link to='/about' onClick={this.toggleMenuClass}><ContactsTitle>About</ContactsTitle></Link>
               <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
               <SocialMedia>
                 <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
