@@ -60,7 +60,6 @@ class ImageViewer extends Component {
     `;
 
     const ImageChanger = styled.div`
-      /* grid-area: nextBtn; */
       display: flex;
       position: fixed;
       top: 50%;

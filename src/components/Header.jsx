@@ -25,7 +25,6 @@ function Header() {
   const Word = styled.ul`
     display: flex;
     flex-flow: row nowrap;
-    
   `;
   const Letter = styled.li`
     transition: all 2.5s ease;
@@ -50,7 +49,6 @@ function Header() {
     left: 0;
     width: 100%;
     height: 100px;
-    /* border-bottom: 1px solid gray; */
     background-color: #fff;
     z-index: 100;
     @media screen and (max-width: 576px) {
@@ -100,8 +98,15 @@ function Header() {
     display: flex;
     justify-content: space-around;
     width: 700px;
+    margin-right: -20px;
+    transition: all 0.5s ease;
+
     @media screen and (max-width: 992px) {
       display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 900px;
+      transition: all 0.5s ease;
     }
   `;
 
@@ -109,6 +114,7 @@ function Header() {
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 700;
+    color: #333;
     font-family: "Circe Bold", sans-serif;
 
     transition: all 0.5s ease;
@@ -116,6 +122,13 @@ function Header() {
       color: #5f23bc;
       transition: all 0.3s ease;
       transform: translateX(-5px);
+    }
+   
+    @media screen and (max-width: 1200px) {
+      font-size: 1.5rem;
+    } 
+    @media screen and (min-width: 1200px) {
+      font-size: 1.8rem;
     }
   `;
 
