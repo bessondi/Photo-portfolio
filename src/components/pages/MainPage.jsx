@@ -1,5 +1,5 @@
 import React from "react";
-import {HashLink as Link} from "react-router-hash-link";
+// import {HashLink as Link} from "react-router-hash-link";
 import styled from "styled-components";
 // import LazyLoad from 'react-lazy-load';
 // import s from "./MainPage.module.css";
@@ -9,7 +9,6 @@ import GridLine from './ImagesGrid';
 
 
 // const LazyImage = React.lazy(() => import('./LazyImage'));
-
 
 // class MainPage extends Component {
 //   constructor(props) {
@@ -42,10 +41,10 @@ function MainPage() {
     `;
 
     const BrickColumns = () => {
+
       const FourColumns = styled.div`
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         justify-content: space-around;
         padding: 0 10px;
       `;
@@ -55,6 +54,7 @@ function MainPage() {
 
       //   const ImagesFlow = images.map((img, id) => {
       //     const VerticalGrid = () => {
+
       //       const Image = styled.img`
       //       display: block;
       //       background-position: center;

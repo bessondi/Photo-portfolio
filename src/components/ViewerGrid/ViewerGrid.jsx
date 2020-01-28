@@ -7,18 +7,18 @@ import { ContentData } from "../ContentData";
 const Viewer = () => {
   const {
     firstColumnImages,
-    secondColumnImages,
-    thirdColumnImages,
-    fourthColumnImages
+    // secondColumnImages,
+    // thirdColumnImages,
+    // fourthColumnImages
   } = ContentData;
 
   const Wrapper = styled.div`
-    display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      display: flex;
+      //flex-direction: column;
+      //justify-content: center;
+      //align-items: center;
       margin: 100px auto 0;
-      width: 100%;
+      //width: 100%;
       /* height: calc(100vh - 150px); */
   `;
 
@@ -35,13 +35,18 @@ const Viewer = () => {
       <GridLine 
         direction='row' 
         wrap='wrap' 
-        // justify='space-around'
-        width='300px'
-        height='300px'
-        add='
-            // border: 5px solid red;
-        '
-        line={firstColumnImages} />
+        width='auto'
+        maxWidth='auto'
+        maxHeight='300px'
+        radius='0'
+        margin='10px'
+        padding='0'
+        justify='center'
+        hoverNone
+        add=''
+        path='/beauty-slider'
+        line={firstColumnImages}
+      />
     </Wrapper>
   );
 };

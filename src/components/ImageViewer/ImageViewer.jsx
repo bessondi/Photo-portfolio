@@ -43,13 +43,13 @@ class ImageViewer extends Component {
 
     const Wrapper = styled.div`
       display: flex;
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
     `;
 
     const Image = styled.img`
-      margin: auto;
       display: block;
+      margin: auto;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
