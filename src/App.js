@@ -9,11 +9,12 @@ import About from "./components/pages/About";
 import Page404 from "./components/pages/Page404";
 
 import {
-  BeautyCollection,
-  ProductCollection,
-  PortraitCollection,
-  ModelsCollection
+  BeautySlider,
+  ProductSlider,
+  PortraitSlider,
+  ModelsSlider
 } from "./components/pages/Collections";
+import Viewer from "./components/ViewerGrid/ViewerGrid";
 
 
 export default function App() {
@@ -22,10 +23,11 @@ export default function App() {
         <Header/>
         <Switch>
           <Route path='/' exact component={MainPage}/>
-          <Route path='/beauty' component={BeautyCollection}/>
-          <Route path='/product-photography' component={ProductCollection}/>
-          <Route path='/portraits' component={PortraitCollection}/>
-          <Route path='/models-tests' component={ModelsCollection}/>
+          <Route path='/beauty' component={Viewer}/>
+          {/* <Route path='/beauty' component={BeautySlider}/> */}
+          <Route path='/product-photography' component={ProductSlider}/>
+          <Route path='/portraits' component={PortraitSlider}/>
+          <Route path='/models-tests' component={ModelsSlider}/>
           <Route path='/about' component={About}/>
           <Route component={Page404}/>
         </Switch>

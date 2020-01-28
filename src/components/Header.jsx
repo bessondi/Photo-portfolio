@@ -181,7 +181,7 @@ function Header() {
           </NavLink>
 
           <NavLink to="/about" activeClassName={s.activeLink}>
-            <NavItem>about / contact</NavItem>
+            <NavItem>about</NavItem>
           </NavLink>
         </Nav>
       </Wrapper>

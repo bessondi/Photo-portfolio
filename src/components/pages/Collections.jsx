@@ -23,7 +23,7 @@ const Wrapper = styled.div`
     height: calc(100vh - 100px);
   `;
 
-const BeautyCollection = () => {
+const BeautySlider = () => {
   return (
     <Wrapper>
       <ImageViewer collection={beautyFullSize} />
@@ -31,7 +31,7 @@ const BeautyCollection = () => {
   );
 };
 
-const ProductCollection = () => {
+const ProductSlider = () => {
   return (
       <Wrapper>
         <ImageViewer collection={productFullSize} />
@@ -39,7 +39,7 @@ const ProductCollection = () => {
   );
 };
 
-const PortraitCollection = () => {
+const PortraitSlider = () => {
   return (
     <Wrapper>
       <ImageViewer collection={portraitFullSize} />
@@ -47,7 +47,7 @@ const PortraitCollection = () => {
   );
 };
 
-const ModelsCollection = () => {
+const ModelsSlider = () => {
   return (
       <Wrapper>
         <ImageViewer collection={modelsFullSize} />
@@ -56,8 +56,8 @@ const ModelsCollection = () => {
 };
 
 export {
-  BeautyCollection,
-  ProductCollection,
-  PortraitCollection,
-  ModelsCollection
+  BeautySlider,
+  ProductSlider,
+  PortraitSlider,
+  ModelsSlider
 }
