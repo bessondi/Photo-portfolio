@@ -114,7 +114,6 @@ function Header() {
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
     font-family: "Circe Bold", sans-serif;
 
     transition: all 0.5s ease;
