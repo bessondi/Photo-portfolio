@@ -5,7 +5,7 @@ import styled from "styled-components";
 // import s from "./MainPage.module.css";
 import {ContentData} from "../ContentData";
 
-import GridLine from './ImagesGrid';
+import ImagesGrid from './ImagesGrid';
 
 
 // const LazyImage = React.lazy(() => import('./LazyImage'));
@@ -51,10 +51,8 @@ function MainPage() {
 
       // const GridColumn = props => {
       //   const images = props.column;
-
       //   const ImagesFlow = images.map((img, id) => {
       //     const VerticalGrid = () => {
-
       //       const Image = styled.img`
       //       display: block;
       //       background-position: center;
@@ -92,7 +90,6 @@ function MainPage() {
       //       height: 1px;
       //       margin: 10px 0;
       //       border-bottom: 1px solid black;
-            
       //       @media screen and (max-width: 992px) {
       //         display: none;
       //       }
@@ -106,7 +103,6 @@ function MainPage() {
       //       //   animation-duration: 1s;
       //       //   animation-name: showPic;
       //       // `;
-        
       //       return (
       //           <Link className={s.overlay} to={images[id].path}>
       //             <ImageDescription className={s.overlayDescription}>
@@ -115,7 +111,6 @@ function MainPage() {
       //               <p>view</p>
       //             </ImageDescription>
       //             <Image src={images[id].picture} alt="Image"/>
-
       //             {/* <Suspense fallback={ <Plug/> }>
       //               <LazyLoad>
       //                 <Image src={images[id].picture} alt="Image"/> 
@@ -128,7 +123,6 @@ function MainPage() {
       //         <VerticalGrid key={id} />
       //     );
       //   });
-
       //   const Column = styled.div`
       //     display: flex;
       //     flex-flow: column nowrap;
@@ -145,10 +139,10 @@ function MainPage() {
 
       return (
           <FourColumns>
-            <GridLine slide="slideUp" duration="100s" line={firstColumnImages}/>
-            <GridLine slide="slideDown" duration="130s" line={secondColumnImages}/>
-            <GridLine slide="slideUp" duration="150s" line={thirdColumnImages}/>
-            <GridLine slide="slideDown" duration="90s" line={fourthColumnImages}/>
+            <ImagesGrid slide="slideUp" duration="100s" content={firstColumnImages}/>
+            <ImagesGrid slide="slideDown" duration="130s" content={secondColumnImages}/>
+            <ImagesGrid slide="slideUp" duration="150s" content={thirdColumnImages}/>
+            <ImagesGrid slide="slideDown" duration="90s" content={fourthColumnImages}/>
           </FourColumns>
       );
     };

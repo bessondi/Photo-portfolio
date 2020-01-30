@@ -5,9 +5,13 @@ import styled from "styled-components";
 class ImageViewer extends Component {
   constructor(props) {
     super(props);
+    // console.log(props);
     this.state = {
 			collection: this.props.collection,
-      image: this.props.collection[0]
+      image: this.props.collection[0],
+      // image: this.props.collection[this.props.imagePathCounter],
+      // imageCount: this.props.collection[this.props.imagePathCounter].index,
+      isShowed : true
     };
   }
 
@@ -37,7 +41,17 @@ class ImageViewer extends Component {
     }
   };
 
+  closeImg = () => {
+    this.setState({
+      // isShowed: !this.state.isShowed
+      isShowed: false
+    });
+  };
+
   render() {
+    // console.log(this.state.imageCount);
+
+    // console.log(this.state.isShowed);
     // console.log(this.state.image);
 		// console.log(this.state.collection.length);
 
@@ -86,12 +100,36 @@ class ImageViewer extends Component {
         }
       `;
 
+    const ImageCloser = styled.div`
+      display: flex;
+      position: fixed;
+      top: 12%;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+			background-color: darkgray;
+			border: 1px solid #fff;
+      transition: all .4s ease;
+        &:hover {
+          background-color: gray;
+          transition: all .4s ease;
+          cursor: pointer;
+        }
+      `;
+
     return (
-      <Wrapper>
-        <Image src={this.state.image.picture} alt="Image" />
-        <ImageChanger onClick={() => this.prevImg()} leftSide='left: 20px;'/>
-        <ImageChanger onClick={() => this.nextImg()} rightSide='right: 20px;'/>
-      </Wrapper>
+        <React.Fragment>
+          {
+            this.state.isShowed ?
+              <Wrapper>
+                <Image src={this.state.image.picture} alt="Image"/>
+                <ImageChanger onClick={() => this.prevImg()} leftSide='left: 20px;'/>
+                <ImageChanger onClick={() => this.nextImg()} rightSide='right: 20px;'/>
+                {/*<ImageCloser onClick={() => this.closeImg()} />*/}
+              </Wrapper>
+              : null
+          }
+        </React.Fragment>
     );
   }
 }

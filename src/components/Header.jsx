@@ -98,7 +98,7 @@ function Header() {
     display: flex;
     justify-content: space-around;
     width: 700px;
-    margin-right: -20px;
+    margin-right: -25px;
     transition: all 0.5s ease;
 
     @media screen and (max-width: 992px) {
@@ -106,6 +106,7 @@ function Header() {
     }
     @media screen and (min-width: 1200px) {
       width: 900px;
+      margin-right: -40px;
       transition: all 0.5s ease;
     }
   `;
@@ -163,19 +164,19 @@ function Header() {
         <NavSideBar/>
 
         <Nav>
-          <NavLink to="/beauty" activeClassName={s.activeLink}>
+          <NavLink to="/beauty-slider" activeClassName={s.activeLink}>
             <NavItem>beauty</NavItem>
           </NavLink>
 
-          <NavLink to="/product-photography" activeClassName={s.activeLink}>
+          <NavLink to="/product-photography-slider" activeClassName={s.activeLink}>
             <NavItem>product</NavItem>
           </NavLink>
 
-          <NavLink to="/portraits" activeClassName={s.activeLink}>
+          <NavLink to="/portraits-slider" activeClassName={s.activeLink}>
             <NavItem>portrait</NavItem>
           </NavLink>
 
-          <NavLink to="/models-tests" activeClassName={s.activeLink}>
+          <NavLink to="/models-tests-slider" activeClassName={s.activeLink}>
             <NavItem>models tests</NavItem>
           </NavLink>
 

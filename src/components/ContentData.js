@@ -41,7 +41,6 @@ import image4_8 from "../img/thumbnails/models/image_8.jpg";
 import image4_9 from "../img/thumbnails/models/image_9.jpg";
 import image4_10 from "../img/thumbnails/models/image_10.jpg";
 
-
 // full size
 import beautyImage1 from "../img/fullsize/beauty/image_8.jpg";
 import beautyImage2 from "../img/fullsize/beauty/image_1.jpg";
@@ -86,54 +85,56 @@ import modelsImage9 from "../img/fullsize/models/image_9.jpg";
 import modelsImage10 from "../img/fullsize/models/image_30.jpg";
 
 export const ContentData = {
+  // compress
   'firstColumnImages': [
     {
       'index': 0,
       'picture': image1,
       'description': '1',
-      'path': '/beauty'
+      'path': '/beauty-1',
+      // 'pathToCollection': '/beauty'
     },
     {
       'index': 1,
       'picture': image2,
       'description': '2',
-      'path': '/beauty'
+      'path': '/beauty-2'
     },
     {
       'index': 2,
       'picture': image3,
       'description': '3',
-      'path': '/beauty'
+      'path': '/beauty-3'
     },
     {
       'index': 3,
       'picture': image4,
       'description': '4',
-      'path': '/beauty'
+      'path': '/beauty-4'
     },
     {
       'index': 4,
       'picture': image5,
       'description': '5',
-      'path': '/beauty'
+      'path': '/beauty-5'
     },
     {
       'index': 5,
       'picture': image6,
       'description': '6',
-      'path': '/beauty'
+      'path': '/beauty-6'
     },
     {
       'index': 6,
       'picture': image7,
       'description': '7',
-      'path': '/beauty'
+      'path': '/beauty-7'
     },
     {
       'index': 7,
       'picture': image8,
       'description': '8',
-      'path': '/beauty'
+      'path': '/beauty-8'
     },
   ],
   'secondColumnImages': [
@@ -323,10 +324,242 @@ export const ContentData = {
     }
   ],
 
+  // compress
+  'beautyViewerImages': [
+    {
+      'index': 0,
+      'picture': image1,
+      'path': '/beauty-1',
+    },
+    {
+      'index': 1,
+      'picture': image2,
+      'path': '/beauty-2'
+    },
+    {
+      'index': 2,
+      'picture': image3,
+      'path': '/beauty-3'
+    },
+    {
+      'index': 3,
+      'picture': image4,
+      'path': '/beauty-4'
+    },
+    {
+      'index': 4,
+      'picture': image5,
+      'path': '/beauty-5'
+    },
+    {
+      'index': 5,
+      'picture': image6,
+      'path': '/beauty-6'
+    },
+    {
+      'index': 6,
+      'picture': image7,
+      'path': '/beauty-7'
+    },
+    {
+      'index': 7,
+      'picture': image8,
+      'path': '/beauty-8'
+    },
+  ],
+  'productViewerImages': [
+    {
+      'index': 0,
+      'picture': image2_1,
+      'description': '1',
+      'path': '/product-photography'
+    },
+    {
+      'index': 1,
+      'picture': image2_2,
+      'description': '2',
+      'path': '/product-photography'
+    },
+    {
+      'index': 2,
+      'picture': image2_3,
+      'description': '3',
+      'path': '/product-photography'
+    },
+    {
+      'index': 3,
+      'picture': image2_4,
+      'description': '4',
+      'path': '/product-photography'
+    },
+    {
+      'index': 4,
+      'picture': image2_5,
+      'description': '5',
+      'path': '/product-photography'
+    },
+    {
+      'index': 5,
+      'picture': image2_6,
+      'description': '6',
+      'path': '/product-photography'
+    },
+    {
+      'index': 6,
+      'picture': image2_7,
+      'description': '7',
+      'path': '/product-photography'
+    },
+    {
+      'index': 7,
+      'picture': image2_8,
+      'description': '8',
+      'path': '/product-photography'
+    },
+    {
+      'index': 8,
+      'picture': image2_9,
+      'description': '9',
+      'path': '/product-photography'
+    },
+    {
+      'index': 9,
+      'picture': image2_10,
+      'description': '10',
+      'path': '/product-photography'
+    }
+  ],
+  'portraitViewerImages': [
+    {
+      'index': 0,
+      'picture': image3_1,
+      'description': '1',
+      'path': '/portraits'
+    },
+    {
+      'index': 1,
+      'picture': image3_2,
+      'description': '2',
+      'path': '/portraits'
+    },
+    {
+      'index': 2,
+      'picture': image3_3,
+      'description': '3',
+      'path': '/portraits'
+    },
+    {
+      'index': 3,
+      'picture': image3_4,
+      'description': '4',
+      'path': '/portraits'
+    },
+    {
+      'index': 4,
+      'picture': image3_5,
+      'description': '5',
+      'path': '/portraits'
+    },
+    {
+      'index': 5,
+      'picture': image3_6,
+      'description': '6',
+      'path': '/portraits'
+    },
+    {
+      'index': 6,
+      'picture': image3_7,
+      'description': '7',
+      'path': '/portraits'
+    },
+    {
+      'index': 7,
+      'picture': image3_8,
+      'description': '8',
+      'path': '/portraits'
+    },
+    {
+      'index': 8,
+      'picture': image3_9,
+      'description': '9',
+      'path': '/portraits'
+    },
+    {
+      'index': 9,
+      'picture': image3_10,
+      'description': '10',
+      'path': '/portraits'
+    }
+  ],
+  'modelsViewerImages': [
+    {
+      'index': 0,
+      'picture': image4_1,
+      'description': '1',
+      'path': '/models-tests'
+    },
+    {
+      'index': 1,
+      'picture': image4_2,
+      'description': '2',
+      'path': '/models-tests'
+    },
+    {
+      'index': 2,
+      'picture': image4_3,
+      'description': '3',
+      'path': '/models-tests'
+    },
+    {
+      'index': 3,
+      'picture': image4_4,
+      'description': '4',
+      'path': '/models-tests'
+    },
+    {
+      'index': 4,
+      'picture': image4_5,
+      'description': '5',
+      'path': '/models-tests'
+    },
+    {
+      'index': 5,
+      'picture': image4_6,
+      'description': '6',
+      'path': '/models-tests'
+    },
+    {
+      'index': 6,
+      'picture': image4_7,
+      'description': '7',
+      'path': '/models-tests'
+    },
+    {
+      'index': 7,
+      'picture': image4_8,
+      'description': '8',
+      'path': '/models-tests'
+    },
+    {
+      'index': 8,
+      'picture': image4_9,
+      'description': '9',
+      'path': '/models-tests'
+    },
+    {
+      'index': 9,
+      'picture': image4_10,
+      'description': '10',
+      'path': '/models-tests'
+    }
+  ],
+
+  // fullSize
   'beautyFullSize': [
     {
       'index': 0,
       'picture': beautyImage1,
+      'pathToCollection': '/beauty'
     },
     {
       'index': 1,
@@ -361,6 +594,7 @@ export const ContentData = {
     {
       'index': 0,
       'picture': productImage1,
+      // 'pathToCollection': '/product-1'
     },
     {
       'index': 1,

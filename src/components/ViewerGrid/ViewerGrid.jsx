@@ -1,38 +1,35 @@
 import React from "react";
 import styled from "styled-components";
-import GridLine from "../pages/ImagesGrid";
+import ImagesGrid from "../pages/ImagesGrid";
 
 import { ContentData } from "../ContentData";
 
-const Viewer = () => {
+
+const ViewerGrid = (props) => {
+  // console.log(props);
+
   const {
     firstColumnImages,
-    // secondColumnImages,
-    // thirdColumnImages,
-    // fourthColumnImages
+    secondColumnImages,
+    thirdColumnImages,
+    fourthColumnImages,
+
+    // beautyViewerImages,
+    // productViewerImages,
+    // portraitViewerImages,
+    // modelsViewerImages,
   } = ContentData;
+
+  // console.log(beautyViewerImages);
 
   const Wrapper = styled.div`
       display: flex;
-      //flex-direction: column;
-      //justify-content: center;
-      //align-items: center;
       margin: 100px auto 0;
-      //width: 100%;
-      /* height: calc(100vh - 150px); */
   `;
-
-  //     const FourColumns = styled.div`
-  //     display: flex;
-  //     flex-direction: row;
-  //     flex-wrap: nowrap;
-  //     justify-content: space-around;
-  //     padding: 0 10px;
-  //   `;
 
   return (
     <Wrapper>
-      <GridLine 
+      <ImagesGrid
         direction='row' 
         wrap='wrap' 
         width='auto'
@@ -44,11 +41,11 @@ const Viewer = () => {
         justify='center'
         hoverNone
         add=''
-        path='/beauty-slider'
-        line={firstColumnImages}
+        content={firstColumnImages}
+        // path='/beauty-slider'
       />
     </Wrapper>
   );
 };
 
-export default Viewer;
+export default ViewerGrid;

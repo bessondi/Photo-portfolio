@@ -1,5 +1,7 @@
 import React from "react";
 import {Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router} from "react-router-dom";
+
 import "./App.css";
 
 import Header from "./components/Header";
@@ -8,7 +10,9 @@ import MainPage from "./components/pages/MainPage";
 import About from "./components/pages/About";
 import Page404 from "./components/pages/Page404";
 
-import Viewer from "./components/ViewerGrid/ViewerGrid";
+import ViewerGrid from "./components/ViewerGrid/ViewerGrid";
+// import GridRender from "./components/pages/Collections";
+
 import {
   BeautySlider,
   ProductSlider,
@@ -17,19 +21,36 @@ import {
 } from "./components/pages/Collections";
 
 
-export default function App() {
+export default function App(props) {
   return (
       <div className="app">
         <Header/>
         <Switch>
           <Route path='/' exact component={MainPage}/>
 
-          <Route path='/beauty' component={Viewer}/>
-          <Route path='/beauty-slider' component={BeautySlider}/>
+          <Route path='/beauty' component={ViewerGrid}/>
+          <Route path='/product-photography' component={ViewerGrid}/>
+          <Route path='/portraits' component={ViewerGrid}/>
+          <Route path='/models-tests' component={ViewerGrid}/>
 
-          <Route path='/product-photography' component={ProductSlider}/>
-          <Route path='/portraits' component={PortraitSlider}/>
-          <Route path='/models-tests' component={ModelsSlider}/>
+          <Route path='/beauty-slider' component={BeautySlider}/>
+          <Route path='/product-photography-slider' component={ProductSlider}/>
+          <Route path='/portraits-slider' component={PortraitSlider}/>
+          <Route path='/models-tests-slider' component={ModelsSlider}/>
+
+          {/*<Route path={'/beauty-slider'} //-' + props.num (props)*/}
+                 {/*render={(routeProps) => (<GridRender {...routeProps} contentBeauty count={props.num} />)}*/}
+          {/*/>*/}
+          {/*<Route path='/product-photography-slider'*/}
+                 {/*render={(routeProps) => (<GridRender {...routeProps} contentProduct count='3' />)}*/}
+          {/*/>*/}
+          {/*<Route path='/portraits-slider'*/}
+                 {/*render={(routeProps) => (<GridRender {...routeProps} contentPortrait count='4' />)}*/}
+          {/*/>*/}
+          {/*<Route path='/models-tests-slider'*/}
+                 {/*render={(routeProps) => (<GridRender {...routeProps} contentModels count='5' />)}*/}
+          {/*/>*/}
+
           <Route path='/about' component={About}/>
           <Route component={Page404}/>
         </Switch>
