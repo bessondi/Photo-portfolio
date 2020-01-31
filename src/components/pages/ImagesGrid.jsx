@@ -127,8 +127,18 @@ class ImagesGrid extends Component {
     padding: 0 10px;
     justify-content: ${this.props.justify || `flex-start`};
     flex-wrap: ${this.props.wrap || `nowrap`};
-    ${this.props.animation || `animation: ${this.props.duration} linear 0.01s ${this.props.slide} infinite`};
-    ${this.props.add};
+    
+    /* ${this.props.animation || `animation: ${this.props.duration} linear 0.01s ${this.props.slide} infinite`}; */
+    animation-name: ${this.props.slide};
+    animation-duration: ${this.props.duration};
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+    /* ${this.props.add}; */
   `;
 
     return (
