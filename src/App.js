@@ -10,15 +10,19 @@ import MainPage from "./components/pages/MainPage";
 import About from "./components/pages/About";
 import Page404 from "./components/pages/Page404";
 
-import ViewerGrid from "./components/ViewerGrid/ViewerGrid";
+import ViewerGridBeauty from "./components/ViewerGrid/ViewerGridBeauty";
 // import GridRender from "./components/pages/Collections";
+import ViewerGridProduct from "./components/ViewerGrid/ViewerGridProduct";
+import ViewerGridPortrait from "./components/ViewerGrid/ViewerGridPortrait";
+import ViewerGridModels from "./components/ViewerGrid/ViewerGridModels";
 
-import {
-  BeautySlider,
-  ProductSlider,
-  PortraitSlider,
-  ModelsSlider
-} from "./components/pages/Collections";
+// import {
+//   BeautySlider,
+//   ProductSlider,
+//   PortraitSlider,
+//   ModelsSlider
+// } from "./components/pages/Collections";
+
 
 
 export default function App() {
@@ -28,20 +32,23 @@ export default function App() {
         <Switch>
           <Route path='/' exact component={MainPage}/>
 
-          {/* <Route path='/beauty' component={ViewerGrid}/>
-          <Route path='/product-photography' component={ViewerGrid}/>
-          <Route path='/portraits' component={ViewerGrid}/>
-          <Route path='/models-tests' component={ViewerGrid}/> */}
+          <Route path='/beauty' component={ViewerGridBeauty}/>
+          {/*<Route path='/product-photography' component={ViewerGridProduct}/>*/}
+          {/*<Route path='/portraits' component={ViewerGridPortrait}/>*/}
+          {/*<Route path='/models-tests' component={ViewerGridModels}/>*/}
 
-          <Route path='/beauty' component={BeautySlider}/>
-          <Route path='/product-photography' component={ProductSlider}/>
-          <Route path='/portraits' component={PortraitSlider}/>
-          <Route path='/models-tests' component={ModelsSlider}/>
 
-          <Route path='/beauty-slider' component={BeautySlider}/>
-          <Route path='/product-photography-slider' component={ProductSlider}/>
-          <Route path='/portraits-slider' component={PortraitSlider}/>
-          <Route path='/models-tests-slider' component={ModelsSlider}/>
+
+
+          {/*<Route path='/beauty' component={BeautySlider}/>*/}
+          {/*<Route path='/product-photography' component={ProductSlider}/>*/}
+          {/*<Route path='/portraits' component={PortraitSlider}/>*/}
+          {/*<Route path='/models-tests' component={ModelsSlider}/>*/}
+
+          {/*<Route path='/beauty-slider' component={BeautySlider}/>*/}
+          {/*<Route path='/product-photography-slider' component={ProductSlider}/>*/}
+          {/*<Route path='/portraits-slider' component={PortraitSlider}/>*/}
+          {/*<Route path='/models-tests-slider' component={ModelsSlider}/>*/}
 
           {/*<Route path={'/beauty-slider'} //-' + props.num (props)*/}
                  {/*render={(routeProps) => (<GridRender {...routeProps} contentBeauty count={props.num} />)}*/}

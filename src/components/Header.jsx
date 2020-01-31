@@ -105,8 +105,7 @@ function Header() {
       display: none;
     }
     @media screen and (min-width: 1200px) {
-      width: 900px;
-      margin-right: -40px;
+      width: 800px;
       transition: all 0.5s ease;
     }
   `;

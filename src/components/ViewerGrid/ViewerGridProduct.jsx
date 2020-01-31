@@ -5,19 +5,11 @@ import ImagesGrid from "../pages/ImagesGrid";
 import { ContentData } from "../ContentData";
 
 
-const ViewerGrid = (props) => {
+const ViewerGridProduct = (props) => {
   // console.log(props);
 
   const {
-    firstColumnImages,
     secondColumnImages,
-    thirdColumnImages,
-    fourthColumnImages,
-
-    // beautyViewerImages,
-    // productViewerImages,
-    // portraitViewerImages,
-    // modelsViewerImages,
   } = ContentData;
 
   // console.log(beautyViewerImages);
@@ -41,11 +33,11 @@ const ViewerGrid = (props) => {
         justify='center'
         hoverNone
         add=''
-        content={firstColumnImages}
+        content={secondColumnImages}
         // path='/beauty-slider'
       />
     </Wrapper>
   );
 };
 
-export default ViewerGrid;
+export default ViewerGridProduct;
