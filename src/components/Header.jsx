@@ -164,19 +164,19 @@ function Header() {
         <NavSideBar/>
 
         <Nav>
-          <NavLink to="/beauty-slider" activeClassName={s.activeLink}>
+          <NavLink to="/beauty" activeClassName={s.activeLink}>
             <NavItem>beauty</NavItem>
           </NavLink>
 
-          <NavLink to="/product-photography-slider" activeClassName={s.activeLink}>
+          <NavLink to="/product-photography" activeClassName={s.activeLink}>
             <NavItem>product</NavItem>
           </NavLink>
 
-          <NavLink to="/portraits-slider" activeClassName={s.activeLink}>
+          <NavLink to="/portraits" activeClassName={s.activeLink}>
             <NavItem>portrait</NavItem>
           </NavLink>
 
-          <NavLink to="/models-tests-slider" activeClassName={s.activeLink}>
+          <NavLink to="/models-tests" activeClassName={s.activeLink}>
             <NavItem>models tests</NavItem>
           </NavLink>
 

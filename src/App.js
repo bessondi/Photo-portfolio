@@ -21,17 +21,22 @@ import {
 } from "./components/pages/Collections";
 
 
-export default function App(props) {
+export default function App() {
   return (
       <div className="app">
         <Header/>
         <Switch>
           <Route path='/' exact component={MainPage}/>
 
-          <Route path='/beauty' component={ViewerGrid}/>
+          {/* <Route path='/beauty' component={ViewerGrid}/>
           <Route path='/product-photography' component={ViewerGrid}/>
           <Route path='/portraits' component={ViewerGrid}/>
-          <Route path='/models-tests' component={ViewerGrid}/>
+          <Route path='/models-tests' component={ViewerGrid}/> */}
+
+          <Route path='/beauty' component={BeautySlider}/>
+          <Route path='/product-photography' component={ProductSlider}/>
+          <Route path='/portraits' component={PortraitSlider}/>
+          <Route path='/models-tests' component={ModelsSlider}/>
 
           <Route path='/beauty-slider' component={BeautySlider}/>
           <Route path='/product-photography-slider' component={ProductSlider}/>
