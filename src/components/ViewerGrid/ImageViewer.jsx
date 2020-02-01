@@ -153,7 +153,7 @@ const ImageViewer = (props) => {
       )
     };
 
-    const component = () => {
+    const ComponentRender = () => {
       return (
         <React.Fragment>
           <Wrapper>
@@ -162,13 +162,17 @@ const ImageViewer = (props) => {
 
             <Image src={item.picture} alt="Image"/>
 
-            <Link to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) - 1).toString()}>
+            {/*to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) - 1).toString()}*/}
+            <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}
+            >
               <ImageChangerBtn
                   // onClick={() => this.prevImg()}
                   leftSide='left: 20px;'/>
             </Link>
 
-            <Link to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) + 1).toString()}>
+            {/* to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) + 1).toString()}*/}
+            <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}
+            >
               <ImageChangerBtn
                   // onClick={() => this.nextImg()}
                   rightSide='right: 20px;'/>
@@ -180,7 +184,7 @@ const ImageViewer = (props) => {
     };
 
     return (
-      <Route path={item.path} key={id} component={component}/>
+      <Route path={item.path} key={id} component={ComponentRender}/>
     )
   });
 
