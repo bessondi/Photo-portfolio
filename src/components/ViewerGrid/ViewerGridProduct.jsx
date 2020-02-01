@@ -1,18 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import ImagesGrid from "../pages/ImagesGrid";
+import ImagesGrid from "./ImagesGrid";
 
-import { ContentData } from "../ContentData";
+import {ContentData} from "../ContentData";
+import ImageViewer from "./ImageViewer";
 
 
-const ViewerGridProduct = (props) => {
-  // console.log(props);
+const ViewerGridProduct = () => {
 
-  const {
-    secondColumnImages,
-  } = ContentData;
-
-  // console.log(beautyViewerImages);
+  const {productForGridSection, productFullSize} = ContentData;
 
   const Wrapper = styled.div`
       display: flex;
@@ -20,23 +16,26 @@ const ViewerGridProduct = (props) => {
   `;
 
   return (
-    <Wrapper>
-      <ImagesGrid
-        direction='row' 
-        wrap='wrap' 
-        width='auto'
-        maxWidth='auto'
-        maxHeight='300px'
-        radius='0'
-        margin='10px'
-        padding='0'
-        justify='center'
-        hoverNone
-        add=''
-        content={secondColumnImages}
-        // path='/beauty-slider'
-      />
-    </Wrapper>
+      <Wrapper>
+        <ImageViewer
+            collection={productFullSize}
+            closeImagePath='/product-photography'
+        />
+        <ImagesGrid
+            direction='row'
+            wrap='wrap'
+            width='auto'
+            maxWidth='auto'
+            maxHeight='300px'
+            radius='0'
+            margin='10px'
+            padding='0'
+            justify='center'
+            hoverNone
+            add=''
+            content={productForGridSection}
+        />
+      </Wrapper>
   );
 };
 

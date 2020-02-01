@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import ImagesGrid from "../pages/ImagesGrid";
+import ImagesGrid from "./ImagesGrid";
 
 import {ContentData} from "../ContentData";
-import ImageViewer from "../ImageViewer/ImageViewer";
+import ImageViewer from "./ImageViewer";
 
 
 const ViewerGridModels = () => {
 
-  const {fourthColumnImages, modelsFullSize} = ContentData;
+  const {modelsForGridSection, modelsFullSize} = ContentData;
 
   const Wrapper = styled.div`
       display: flex;
@@ -33,7 +33,7 @@ const ViewerGridModels = () => {
             justify='center'
             hoverNone
             add=''
-            content={fourthColumnImages}
+            content={modelsForGridSection}
         />
       </Wrapper>
   );

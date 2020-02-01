@@ -10,8 +10,8 @@ import telegram from "../../img/icons/telegram_white.svg";
 
 
 class NavSideBar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       activeMenu: false
     };

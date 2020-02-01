@@ -50,7 +50,7 @@ function Header() {
     width: 100%;
     height: 100px;
     background-color: #fff;
-    z-index: 100;
+    z-index: 5;
     @media screen and (max-width: 576px) {
       height: 80px;
     }

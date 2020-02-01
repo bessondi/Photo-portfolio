@@ -1,18 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import ImagesGrid from "../pages/ImagesGrid";
+import ImagesGrid from "./ImagesGrid";
 
-import { ContentData } from "../ContentData";
+import {ContentData} from "../ContentData";
+import ImageViewer from "./ImageViewer";
 
 
-const ViewerGridPortrait = (props) => {
-  // console.log(props);
+const ViewerGridPortrait = () => {
 
-  const {
-    thirdColumnImages,
-  } = ContentData;
-
-  // console.log(beautyViewerImages);
+  const {portraitsForGridSection, portraitFullSize} = ContentData;
 
   const Wrapper = styled.div`
       display: flex;
@@ -20,23 +16,26 @@ const ViewerGridPortrait = (props) => {
   `;
 
   return (
-    <Wrapper>
-      <ImagesGrid
-        direction='row' 
-        wrap='wrap' 
-        width='auto'
-        maxWidth='auto'
-        maxHeight='300px'
-        radius='0'
-        margin='10px'
-        padding='0'
-        justify='center'
-        hoverNone
-        add=''
-        content={thirdColumnImages}
-        // path='/beauty-slider'
-      />
-    </Wrapper>
+      <Wrapper>
+        <ImageViewer
+            collection={portraitFullSize}
+            closeImagePath='/portraits'
+        />
+        <ImagesGrid
+            direction='row'
+            wrap='wrap'
+            width='auto'
+            maxWidth='auto'
+            maxHeight='300px'
+            radius='0'
+            margin='10px'
+            padding='0'
+            justify='center'
+            hoverNone
+            add=''
+            content={portraitsForGridSection}
+        />
+      </Wrapper>
   );
 };
 
