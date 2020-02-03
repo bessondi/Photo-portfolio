@@ -1,147 +1,142 @@
 // crop size for main page & grid sections
 import image1 from "../img/thumbnails/beauty/image_1.jpg";
-import image2 from "../img/thumbnails/beauty/image_8.jpg";
-import image3 from "../img/thumbnails/beauty/image_2.jpg";
+import image2 from "../img/thumbnails/beauty/image_2.jpg";
+import image3 from "../img/thumbnails/beauty/image_3.jpg";
 import image4 from "../img/thumbnails/beauty/image_4.jpg";
 import image5 from "../img/thumbnails/beauty/image_5.jpg";
-import image6 from "../img/thumbnails/beauty/image_7.jpg";
-import image7 from "../img/thumbnails/beauty/image_6.jpg";
-import image8 from "../img/thumbnails/beauty/image_3.jpg";
+import image6 from "../img/thumbnails/beauty/image_6.jpg";
+import image7 from "../img/thumbnails/beauty/image_7.jpg";
+import image8 from "../img/thumbnails/beauty/image_8.jpg";
 
-
-import image2_1 from "../img/thumbnails/product/image_29.jpg";
-import image2_2 from "../img/thumbnails/product/image_31.jpg";
-import image2_3 from "../img/thumbnails/product/image_6.jpg";
+import image2_1 from "../img/thumbnails/product/image_1.jpg";
+import image2_2 from "../img/thumbnails/product/image_2.jpg";
+import image2_3 from "../img/thumbnails/product/image_3.jpg";
 import image2_4 from "../img/thumbnails/product/image_4.jpg";
-import image2_5 from "../img/thumbnails/product/image_48.jpg";
-import image2_6 from "../img/thumbnails/product/image_25.jpg";
+import image2_5 from "../img/thumbnails/product/image_5.jpg";
+import image2_6 from "../img/thumbnails/product/image_6.jpg";
 import image2_7 from "../img/thumbnails/product/image_7.jpg";
-import image2_8 from "../img/thumbnails/product/image_35.jpg";
-import image2_9 from "../img/thumbnails/product/image_36.jpg";
-import image2_10 from "../img/thumbnails/product/image_52.jpg";
+import image2_8 from "../img/thumbnails/product/image_8.jpg";
+import image2_9 from "../img/thumbnails/product/image_9.jpg";
+import image2_10 from "../img/thumbnails/product/image_10.jpg";
+import image2_11 from "../img/thumbnails/product/image_11.jpg";
+import image2_12 from "../img/thumbnails/product/image_12.jpg";
+import image2_13 from "../img/thumbnails/product/image_13.jpg";
+import image2_14 from "../img/thumbnails/product/image_14.jpg";
+import image2_15 from "../img/thumbnails/product/image_15.jpg";
+import image2_16 from "../img/thumbnails/product/image_16.jpg";
+import image2_17 from "../img/thumbnails/product/image_17.jpg";
+import image2_18 from "../img/thumbnails/product/image_18.jpg";
+import image2_19 from "../img/thumbnails/product/image_19.jpg";
+import image2_20 from "../img/thumbnails/product/image_20.jpg";
+import image2_21 from "../img/thumbnails/product/image_21.jpg";
+import image2_22 from "../img/thumbnails/product/image_22.jpg";
+import image2_23 from "../img/thumbnails/product/image_23.jpg";
+import image2_24 from "../img/thumbnails/product/image_24.jpg";
+import image2_25 from "../img/thumbnails/product/image_25.jpg";
+import image2_26 from "../img/thumbnails/product/image_26.jpg";
+import image2_27 from "../img/thumbnails/product/image_27.jpg";
+import image2_28 from "../img/thumbnails/product/image_28.jpg";
+import image2_29 from "../img/thumbnails/product/image_29.jpg";
 
-import image2_11 from "../img/thumbnails/product/image_29.jpg";
-import image2_12 from "../img/thumbnails/product/image_31.jpg";
-import image2_13 from "../img/thumbnails/product/image_6.jpg";
-import image2_14 from "../img/thumbnails/product/image_4.jpg";
-import image2_15 from "../img/thumbnails/product/image_48.jpg";
-import image2_16 from "../img/thumbnails/product/image_25.jpg";
-import image2_17 from "../img/thumbnails/product/image_7.jpg";
-import image2_18 from "../img/thumbnails/product/image_35.jpg";
-import image2_19 from "../img/thumbnails/product/image_36.jpg";
-import image2_20 from "../img/thumbnails/product/image_52.jpg";
-import image2_21 from "../img/thumbnails/product/image_29.jpg";
-import image2_22 from "../img/thumbnails/product/image_31.jpg";
-import image2_23 from "../img/thumbnails/product/image_6.jpg";
-import image2_24 from "../img/thumbnails/product/image_4.jpg";
-import image2_25 from "../img/thumbnails/product/image_48.jpg";
-import image2_26 from "../img/thumbnails/product/image_25.jpg";
-import image2_27 from "../img/thumbnails/product/image_7.jpg";
-import image2_28 from "../img/thumbnails/product/image_35.jpg";
-import image2_29 from "../img/thumbnails/product/image_36.jpg";
-
-
-import image3_1 from "../img/thumbnails/portrait/image_26.jpg";
-import image3_2 from "../img/thumbnails/portrait/image_10.jpg";
-import image3_3 from "../img/thumbnails/portrait/image_11.jpg";
-import image3_4 from "../img/thumbnails/portrait/image_16.jpg";
-import image3_5 from "../img/thumbnails/portrait/image_1.jpg";
+import image3_1 from "../img/thumbnails/portrait/image_1.jpg";
+import image3_2 from "../img/thumbnails/portrait/image_2.jpg";
+import image3_3 from "../img/thumbnails/portrait/image_3.jpg";
+import image3_4 from "../img/thumbnails/portrait/image_4.jpg";
+import image3_5 from "../img/thumbnails/portrait/image_5.jpg";
 import image3_6 from "../img/thumbnails/portrait/image_6.jpg";
-import image3_7 from "../img/thumbnails/portrait/image_4.jpg";
-import image3_8 from "../img/thumbnails/portrait/image_22.jpg";
+import image3_7 from "../img/thumbnails/portrait/image_7.jpg";
+import image3_8 from "../img/thumbnails/portrait/image_8.jpg";
 import image3_9 from "../img/thumbnails/portrait/image_9.jpg";
 import image3_10 from "../img/thumbnails/portrait/image_10.jpg";
+import image3_11 from "../img/thumbnails/portrait/image_11.jpg";
+import image3_12 from "../img/thumbnails/portrait/image_12.jpg";
+import image3_13 from "../img/thumbnails/portrait/image_13.jpg";
+import image3_14 from "../img/thumbnails/portrait/image_14.jpg";
+import image3_15 from "../img/thumbnails/portrait/image_15.jpg";
+import image3_16 from "../img/thumbnails/portrait/image_16.jpg";
+import image3_17 from "../img/thumbnails/portrait/image_17.jpg";
+import image3_18 from "../img/thumbnails/portrait/image_18.jpg";
+import image3_19 from "../img/thumbnails/portrait/image_19.jpg";
+import image3_20 from "../img/thumbnails/portrait/image_20.jpg";
+import image3_21 from "../img/thumbnails/portrait/image_21.jpg";
+import image3_22 from "../img/thumbnails/portrait/image_22.jpg";
+import image3_23 from "../img/thumbnails/portrait/image_23.jpg";
+import image3_24 from "../img/thumbnails/portrait/image_24.jpg";
+import image3_25 from "../img/thumbnails/portrait/image_25.jpg";
+import image3_26 from "../img/thumbnails/portrait/image_26.jpg";
+import image3_27 from "../img/thumbnails/portrait/image_27.jpg";
+import image3_28 from "../img/thumbnails/portrait/image_28.jpg";
 
-import image3_11 from "../img/thumbnails/portrait/image_26.jpg";
-import image3_12 from "../img/thumbnails/portrait/image_10.jpg";
-import image3_13 from "../img/thumbnails/portrait/image_11.jpg";
-import image3_14 from "../img/thumbnails/portrait/image_16.jpg";
-import image3_15 from "../img/thumbnails/portrait/image_1.jpg";
-import image3_16 from "../img/thumbnails/portrait/image_6.jpg";
-import image3_17 from "../img/thumbnails/portrait/image_4.jpg";
-import image3_18 from "../img/thumbnails/portrait/image_22.jpg";
-import image3_19 from "../img/thumbnails/portrait/image_9.jpg";
-import image3_20 from "../img/thumbnails/portrait/image_10.jpg";
-import image3_21 from "../img/thumbnails/portrait/image_26.jpg";
-import image3_22 from "../img/thumbnails/portrait/image_10.jpg";
-import image3_23 from "../img/thumbnails/portrait/image_11.jpg";
-import image3_24 from "../img/thumbnails/portrait/image_16.jpg";
-import image3_25 from "../img/thumbnails/portrait/image_1.jpg";
-import image3_26 from "../img/thumbnails/portrait/image_6.jpg";
-import image3_27 from "../img/thumbnails/portrait/image_4.jpg";
-import image3_28 from "../img/thumbnails/portrait/image_22.jpg";
-
-
-import image4_1 from "../img/thumbnails/models/image_10.jpg";
-import image4_2 from "../img/thumbnails/models/image_28.jpg";
-import image4_3 from "../img/thumbnails/models/image_48.jpg";
-import image4_4 from "../img/thumbnails/models/image_3.jpg";
-import image4_5 from "../img/thumbnails/models/image_19.jpg";
-import image4_6 from "../img/thumbnails/models/image_13.jpg";
-import image4_7 from "../img/thumbnails/models/image_2.jpg";
+import image4_1 from "../img/thumbnails/models/image_1.jpg";
+import image4_2 from "../img/thumbnails/models/image_2.jpg";
+import image4_3 from "../img/thumbnails/models/image_3.jpg";
+import image4_4 from "../img/thumbnails/models/image_4.jpg";
+import image4_5 from "../img/thumbnails/models/image_5.jpg";
+import image4_6 from "../img/thumbnails/models/image_6.jpg";
+import image4_7 from "../img/thumbnails/models/image_7.jpg";
 import image4_8 from "../img/thumbnails/models/image_8.jpg";
 import image4_9 from "../img/thumbnails/models/image_9.jpg";
-import image4_10 from "../img/thumbnails/models/image_11.jpg";
+import image4_10 from "../img/thumbnails/models/image_10.jpg";
+import image4_11 from "../img/thumbnails/models/image_11.jpg";
+import image4_12 from "../img/thumbnails/models/image_12.jpg";
+import image4_13 from "../img/thumbnails/models/image_13.jpg";
+import image4_14 from "../img/thumbnails/models/image_14.jpg";
+import image4_15 from "../img/thumbnails/models/image_15.jpg";
+import image4_16 from "../img/thumbnails/models/image_16.jpg";
+import image4_17 from "../img/thumbnails/models/image_17.jpg";
+import image4_18 from "../img/thumbnails/models/image_18.jpg";
+import image4_19 from "../img/thumbnails/models/image_19.jpg";
+import image4_20 from "../img/thumbnails/models/image_20.jpg";
+import image4_21 from "../img/thumbnails/models/image_21.jpg";
+import image4_22 from "../img/thumbnails/models/image_22.jpg";
+import image4_23 from "../img/thumbnails/models/image_23.jpg";
+import image4_24 from "../img/thumbnails/models/image_24.jpg";
+import image4_25 from "../img/thumbnails/models/image_25.jpg";
+import image4_26 from "../img/thumbnails/models/image_26.jpg";
+import image4_27 from "../img/thumbnails/models/image_27.jpg";
+import image4_28 from "../img/thumbnails/models/image_28.jpg";
+import image4_29 from "../img/thumbnails/models/image_29.jpg";
+import image4_30 from "../img/thumbnails/models/image_30.jpg";
+import image4_31 from "../img/thumbnails/models/image_31.jpg";
+import image4_32 from "../img/thumbnails/models/image_32.jpg";
+import image4_33 from "../img/thumbnails/models/image_33.jpg";
+import image4_34 from "../img/thumbnails/models/image_34.jpg";
+import image4_35 from "../img/thumbnails/models/image_35.jpg";
+import image4_36 from "../img/thumbnails/models/image_36.jpg";
+import image4_37 from "../img/thumbnails/models/image_37.jpg";
+import image4_38 from "../img/thumbnails/models/image_38.jpg";
+import image4_39 from "../img/thumbnails/models/image_39.jpg";
+import image4_40 from "../img/thumbnails/models/image_40.jpg";
+import image4_41 from "../img/thumbnails/models/image_41.jpg";
+import image4_42 from "../img/thumbnails/models/image_42.jpg";
+import image4_43 from "../img/thumbnails/models/image_43.jpg";
+import image4_44 from "../img/thumbnails/models/image_44.jpg";
+import image4_45 from "../img/thumbnails/models/image_45.jpg";
+import image4_46 from "../img/thumbnails/models/image_46.jpg";
+import image4_47 from "../img/thumbnails/models/image_47.jpg";
+import image4_48 from "../img/thumbnails/models/image_48.jpg";
+import image4_49 from "../img/thumbnails/models/image_49.jpg";
+import image4_50 from "../img/thumbnails/models/image_50.jpg";
+import image4_51 from "../img/thumbnails/models/image_51.jpg";
+import image4_52 from "../img/thumbnails/models/image_52.jpg";
+import image4_53 from "../img/thumbnails/models/image_53.jpg";
+import image4_54 from "../img/thumbnails/models/image_54.jpg";
+import image4_55 from "../img/thumbnails/models/image_55.jpg";
+import image4_56 from "../img/thumbnails/models/image_56.jpg";
+// import image4_57 from "../img/thumbnails/models/imag7e_5.jpg";
+// import image4_58 from "../img/thumbnails/models/imag8e_5.jpg";
+// import image4_59 from "../img/thumbnails/models/imag9e_5.jpg";
 
-import image4_11 from "../img/thumbnails/models/image_12.jpg";
-import image4_12 from "../img/thumbnails/models/image_14.jpg";
-import image4_13 from "../img/thumbnails/models/image_15.jpg";
-import image4_14 from "../img/thumbnails/models/image_16.jpg";
-import image4_15 from "../img/thumbnails/models/image_17.jpg";
-import image4_16 from "../img/thumbnails/models/image_18.jpg";
-import image4_17 from "../img/thumbnails/models/image_19.jpg";
-import image4_18 from "../img/thumbnails/models/image_20.jpg";
-import image4_19 from "../img/thumbnails/models/image_21.jpg";
-import image4_20 from "../img/thumbnails/models/image_22.jpg";
-import image4_21 from "../img/thumbnails/models/image_23.jpg";
-import image4_22 from "../img/thumbnails/models/image_24.jpg";
-import image4_23 from "../img/thumbnails/models/image_25.jpg";
-import image4_24 from "../img/thumbnails/models/image_26.jpg";
-import image4_25 from "../img/thumbnails/models/image_27.jpg";
-import image4_26 from "../img/thumbnails/models/image_13.jpg";
-import image4_27 from "../img/thumbnails/models/image_2.jpg";
-import image4_28 from "../img/thumbnails/models/image_8.jpg";
-import image4_29 from "../img/thumbnails/models/image_9.jpg";
-import image4_30 from "../img/thumbnails/models/image_10.jpg";
-import image4_31 from "../img/thumbnails/models/image_10.jpg";
-import image4_32 from "../img/thumbnails/models/image_28.jpg";
-import image4_33 from "../img/thumbnails/models/image_48.jpg";
-import image4_34 from "../img/thumbnails/models/image_3.jpg";
-import image4_35 from "../img/thumbnails/models/image_19.jpg";
-import image4_36 from "../img/thumbnails/models/image_13.jpg";
-import image4_37 from "../img/thumbnails/models/image_2.jpg";
-import image4_38 from "../img/thumbnails/models/image_8.jpg";
-import image4_39 from "../img/thumbnails/models/image_9.jpg";
-import image4_40 from "../img/thumbnails/models/image_10.jpg";
-import image4_41 from "../img/thumbnails/models/image_10.jpg";
-import image4_42 from "../img/thumbnails/models/image_28.jpg";
-import image4_43 from "../img/thumbnails/models/image_48.jpg";
-import image4_44 from "../img/thumbnails/models/image_3.jpg";
-import image4_45 from "../img/thumbnails/models/image_19.jpg";
-import image4_46 from "../img/thumbnails/models/image_13.jpg";
-import image4_47 from "../img/thumbnails/models/image_2.jpg";
-import image4_48 from "../img/thumbnails/models/image_8.jpg";
-import image4_49 from "../img/thumbnails/models/image_9.jpg";
-import image4_50 from "../img/thumbnails/models/image_10.jpg";
-import image4_51 from "../img/thumbnails/models/image_10.jpg";
-import image4_52 from "../img/thumbnails/models/image_28.jpg";
-import image4_53 from "../img/thumbnails/models/image_48.jpg";
-import image4_54 from "../img/thumbnails/models/image_3.jpg";
-import image4_55 from "../img/thumbnails/models/image_19.jpg";
-import image4_56 from "../img/thumbnails/models/image_13.jpg";
-import image4_57 from "../img/thumbnails/models/image_2.jpg";
-import image4_58 from "../img/thumbnails/models/image_8.jpg";
-import image4_59 from "../img/thumbnails/models/image_9.jpg";
 
 // full size for viewer
 import beautyImage1 from "../img/fullsize/beauty/image_1.jpg";
-import beautyImage2 from "../img/fullsize/beauty/image_8.jpg";
-import beautyImage3 from "../img/fullsize/beauty/image_2.jpg";
+import beautyImage2 from "../img/fullsize/beauty/image_2.jpg";
+import beautyImage3 from "../img/fullsize/beauty/image_3.jpg";
 import beautyImage4 from "../img/fullsize/beauty/image_4.jpg";
 import beautyImage5 from "../img/fullsize/beauty/image_5.jpg";
-import beautyImage6 from "../img/fullsize/beauty/image_7.jpg";
-import beautyImage7 from "../img/fullsize/beauty/image_6.jpg";
-import beautyImage8 from "../img/fullsize/beauty/image_3.jpg";
+import beautyImage6 from "../img/fullsize/beauty/image_6.jpg";
+import beautyImage7 from "../img/fullsize/beauty/image_7.jpg";
+import beautyImage8 from "../img/fullsize/beauty/image_8.jpg";
 
 import productImage1 from "../img/fullsize/product/image_1.jpg";
 import productImage2 from "../img/fullsize/product/image_2.jpg";
@@ -258,9 +253,9 @@ import modelsImage53 from "../img/fullsize/models/image_53.jpg";
 import modelsImage54 from "../img/fullsize/models/image_54.jpg";
 import modelsImage55 from "../img/fullsize/models/image_55.jpg";
 import modelsImage56 from "../img/fullsize/models/image_56.jpg";
-import modelsImage57 from "../img/fullsize/models/image_57.jpg";
-import modelsImage58 from "../img/fullsize/models/image_58.jpg";
-import modelsImage59 from "../img/fullsize/models/image_59.jpg";
+// import modelsImage57 from "../img/fullsize/models/image_57.jpg";
+// import modelsImage58 from "../img/fullsize/models/image_58.jpg";
+// import modelsImage59 from "../img/fullsize/models/image_59.jpg";
 
 
 export const ContentData = {
@@ -1235,24 +1230,24 @@ export const ContentData = {
       'description': '56',
       'path': '/models-tests/56'
     },
-    {
-      'index': 56,
-      'picture': image4_57,
-      'description': '57',
-      'path': '/models-tests/57'
-    },
-    {
-      'index': 57,
-      'picture': image4_58,
-      'description': '58',
-      'path': '/models-tests/58'
-    },
-    {
-      'index': 58,
-      'picture': image4_59,
-      'description': '59',
-      'path': '/models-tests/59'
-    },
+    // {
+    //   'index': 56,
+    //   'picture': image4_57,
+    //   'description': '57',
+    //   'path': '/models-tests/57'
+    // },
+    // {
+    //   'index': 57,
+    //   'picture': image4_58,
+    //   'description': '58',
+    //   'path': '/models-tests/58'
+    // },
+    // {
+    //   'index': 58,
+    //   'picture': image4_59,
+    //   'description': '59',
+    //   'path': '/models-tests/59'
+    // },
   ],
 
 // full size for viewer
@@ -1990,23 +1985,23 @@ export const ContentData = {
       'path': '/models-tests/56',
       'pathId': '56'
     },
-    {
-      'index': 56,
-      'picture': modelsImage57,
-      'path': '/models-tests/57',
-      'pathId': '57'
-    },
-    {
-      'index': 57,
-      'picture': modelsImage58,
-      'path': '/models-tests/58',
-      'pathId': '58'
-    },
-    {
-      'index': 58,
-      'picture': modelsImage59,
-      'path': '/models-tests/59',
-      'pathId': '59'
-    }
+    // {
+    //   'index': 56,
+    //   'picture': modelsImage57,
+    //   'path': '/models-tests/57',
+    //   'pathId': '57'
+    // },
+    // {
+    //   'index': 57,
+    //   'picture': modelsImage58,
+    //   'path': '/models-tests/58',
+    //   'pathId': '58'
+    // },
+    // {
+    //   'index': 58,
+    //   'picture': modelsImage59,
+    //   'path': '/models-tests/59',
+    //   'pathId': '59'
+    // }
   ]
 };
