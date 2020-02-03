@@ -5,7 +5,7 @@ import styled from "styled-components";
 // import s from "./MainPage.module.css";
 import {ContentData} from "../ContentData";
 
-import ImagesGrid from './ImagesGrid';
+import ImagesGrid from '../ViewerGrid/ImagesGrid';
 
 
 // const LazyImage = React.lazy(() => import('./LazyImage'));
@@ -23,10 +23,10 @@ import ImagesGrid from './ImagesGrid';
 function MainPage() {
 
     const {
-      firstColumnImages,
-      secondColumnImages,
-      thirdColumnImages,
-      fourthColumnImages
+      beautyForMainPage,
+      productForMainPage,
+      portraitsForMainPage,
+      modelsForMainPage
     } = ContentData;
 
     const Wrapper = styled.main`
@@ -139,10 +139,10 @@ function MainPage() {
 
       return (
           <FourColumns>
-            <ImagesGrid slide="slideUp" duration="100s" content={firstColumnImages}/>
-            <ImagesGrid slide="slideDown" duration="130s" content={secondColumnImages}/>
-            <ImagesGrid slide="slideUp" duration="150s" content={thirdColumnImages}/>
-            <ImagesGrid slide="slideDown" duration="90s" content={fourthColumnImages}/>
+            <ImagesGrid slide="slideUp" duration="100s" content={beautyForMainPage}/>
+            <ImagesGrid slide="slideDown" duration="130s" content={productForMainPage}/>
+            <ImagesGrid slide="slideUp" duration="150s" content={portraitsForMainPage}/>
+            <ImagesGrid slide="slideDown" duration="90s" content={modelsForMainPage}/>
           </FourColumns>
       );
     };

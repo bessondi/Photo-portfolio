@@ -50,7 +50,7 @@ function Header() {
     width: 100%;
     height: 100px;
     background-color: #fff;
-    z-index: 100;
+    z-index: 5;
     @media screen and (max-width: 576px) {
       height: 80px;
     }
@@ -105,8 +105,7 @@ function Header() {
       display: none;
     }
     @media screen and (min-width: 1200px) {
-      width: 900px;
-      margin-right: -40px;
+      width: 800px;
       transition: all 0.5s ease;
     }
   `;
