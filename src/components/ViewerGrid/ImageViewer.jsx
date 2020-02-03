@@ -35,6 +35,8 @@ const ImageViewer = (props) => {
   const {closeImagePath} = props,
       imageCollection = props.collection;
 
+  const ImagesAmount = imageCollection.map(items => items);
+
   const ImageTemplate = imageCollection.map((item, id) => {
 
     const Wrapper = styled.div`
@@ -157,27 +159,20 @@ const ImageViewer = (props) => {
       return (
         <React.Fragment>
           <Wrapper>
-
             <ImageCloser/>
-
             <Image src={item.picture} alt="Image"/>
-
-            {/*to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) - 1).toString()}*/}
-            <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}
-            >
-              <ImageChangerBtn
-                  // onClick={() => this.prevImg()}
-                  leftSide='left: 20px;'/>
-            </Link>
-
-            {/* to={item.path.substring(0, item.path.length - 2) + (parseInt(item.pathId) + 1).toString()}*/}
-            <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}
-            >
-              <ImageChangerBtn
-                  // onClick={() => this.nextImg()}
-                  rightSide='right: 20px;'/>
-            </Link>
-
+            { item.pathId <= 1 ?
+            null :
+                <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>
+                  <ImageChangerBtn leftSide='left: 20px;'/>
+                </Link>
+            }
+            { item.pathId >= ImagesAmount.length ?
+            null :
+                <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
+                  <ImageChangerBtn rightSide='right: 20px;'/>
+                </Link>
+            }
           </Wrapper>
         </React.Fragment>
       )

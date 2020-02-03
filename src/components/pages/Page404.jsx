@@ -28,20 +28,25 @@ class Page404 extends Component {
       animation-duration: 1s;
       animation-name: showPic;
     `;
-    const BackToHome = styled.h2`
+    const BackToHomeLink = styled.h2`
       color: #444;
       margin: 0 auto;
       text-align: center;
       animation-duration: 1s;
       animation-name: showPic;
+      transition: all 0.3s ease;    
+      &:hover {
+        color: #5f23bc;
+        transition: all 0.3s ease;
+      }
     `;
 
     return (
       <Wrapper>
-        <Text>This page will appear soon..</Text>
-        <br />
+        <Text>This page does not exist</Text>
+        <br/>
         <Link to="/">
-          <BackToHome>Back to the main page</BackToHome>
+          <BackToHomeLink>Back to the Main Page</BackToHomeLink>
         </Link>
       </Wrapper>
     );

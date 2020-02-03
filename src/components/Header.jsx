@@ -35,7 +35,7 @@ function Header() {
     }
     @media screen and (max-width: 992px) {
       &:hover {
-        color: #000;
+        color: #333;
         transform: scale(1);
       }
     }
