@@ -6,9 +6,9 @@ import "./App.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import MainPage from "./components/pages/MainPage";
-import About from "./components/pages/About";
-import Page404 from "./components/pages/Page404";
+import MainPage from "./components/Pages/MainPage";
+import About from "./components/Pages/About";
+import Page404 from "./components/Pages/Page404";
 
 import ViewerGridBeauty from "./components/ViewerGrid/ViewerGridBeauty";
 import ViewerGridProduct from "./components/ViewerGrid/ViewerGridProduct";

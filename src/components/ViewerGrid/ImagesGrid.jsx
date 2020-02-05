@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 
-import s from "../pages/MainPage.module.css";
+import s from "../Pages/MainPage.module.css";
 
 class ImagesGrid extends Component {
   constructor(props) {

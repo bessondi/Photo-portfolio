@@ -5,7 +5,7 @@ import styled from "styled-components";
 import s from './NavSideBar.module.css';
 
 import instagram from "../../img/icons/instagram_white.svg";
-import facebook from "../../img/icons/facebook_white.svg";
+// import facebook from "../../img/icons/facebook_white.svg";
 import telegram from "../../img/icons/telegram_white.svg";
 
 
@@ -37,12 +37,10 @@ class NavSideBar extends Component {
         font-family: "Circe Extra Bold", sans-serif;
         color: #fff;
         /* text-decoration: none; */
-
         @media screen and (max-width: 576px) {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
       }
-
       &>a:hover {
         color: #5f23bc;
       }
@@ -66,9 +64,8 @@ class NavSideBar extends Component {
         transform: scale(1.05);
         transition: all 0.3s ease;  
       }
-
       @media screen and (max-width: 576px) {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
     `;
     const Mail = styled.a`
@@ -83,16 +80,15 @@ class NavSideBar extends Component {
     `;
     const SocialMedia = styled.div`
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: flex-start;
-      fill: #fff;
     `;
     const Icon = styled.img`
       display: block;
       width: 50px;
       height: 50px;
-      
       transition: all 0.3s ease;  
+      margin: 0 20px;
       &:hover {
         transform: scale(1.1);
         transition: all 0.3s ease;  
@@ -140,7 +136,7 @@ class NavSideBar extends Component {
               <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
               <SocialMedia>
                 <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-                <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+                {/*<a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>*/}
                 <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
               </SocialMedia>
             </Contacts>

@@ -17,8 +17,7 @@ function Header() {
     return color;
   };
   function getRandomNumber(low, high) {
-    let randomNum = Math.floor(Math.random() * (high - low + 1)) + low;
-    return randomNum;
+    return Math.floor(Math.random() * (high - low + 1)) + low;
   }
 
 
@@ -36,7 +35,7 @@ function Header() {
     @media screen and (max-width: 992px) {
       &:hover {
         color: #333;
-        transform: scale(1);
+        transform: none;
       }
     }
   `;

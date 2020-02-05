@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Img from '../../img/me.jpg'
 import instagram from '../../img/icons/instagram.svg'
-import facebook from '../../img/icons/facebook.svg'
+// import facebook from '../../img/icons/facebook.svg'
 import telegram from '../../img/icons/telegram.svg'
 
 function About() {
@@ -16,7 +16,7 @@ function About() {
   `;
   const Grid = styled.div`
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 20px;
     //grid-template-rows: auto 1fr 1fr auto auto;
     //grid-template-columns: auto 1fr 1fr auto;
     //grid-template-areas:
@@ -30,6 +30,11 @@ function About() {
       ". photo ."
       ". description ."
       ". social .";
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-flow: column;
+      margin: 0 40px;
+    }
   `;
   const Image = styled.img`
     grid-area: photo;
@@ -48,13 +53,11 @@ function About() {
     grid-area: description;
     animation-duration: 1s;
     animation-name: showPic;
-    
     text-align: center;
   `;
   const Mail = styled.a`
     color: mediumpurple;
     font-weight: bold;
-    
     transition: all 0.3s ease;    
     &:hover {
       color: #5F23BC;
@@ -67,14 +70,13 @@ function About() {
     justify-content: space-around;
     align-items: flex-start;
     height: 80px;
-    width: 300px;
+    width: 200px;
     margin: auto;
   `;
   const Icon = styled.img`
     display: block;
     width: 40px;
     height: 40px;
-    
     transition: all 0.3s ease;  
     &:hover {
       transform: scale(1.1);
@@ -95,7 +97,7 @@ function About() {
 
           <SocialMedia>
             <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-            <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+            {/*<a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>*/}
             <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
           </SocialMedia>
 

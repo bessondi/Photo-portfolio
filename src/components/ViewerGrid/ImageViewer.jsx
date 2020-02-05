@@ -35,8 +35,6 @@ const ImageViewer = (props) => {
   const {closeImagePath} = props,
       imageCollection = props.collection;
 
-  const ImagesAmount = imageCollection.map(items => items);
-
   const ImageTemplate = imageCollection.map((item, id) => {
 
     const Wrapper = styled.div`
@@ -50,7 +48,8 @@ const ImageViewer = (props) => {
       width: 100%;
       height: 100vh;
       //height: calc(100vh - 120px);
-      background-color: rgba(0,0,0,0.95);
+      //background-color: rgba(0,0,0,0.95);
+      background-color: #fff;
       z-index: 10;
     `;
 
@@ -60,8 +59,8 @@ const ImageViewer = (props) => {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      max-width: 90%;
-      max-height: 90%;
+      max-width: 85%;
+      max-height: 85%;
       animation-duration: 1s;
       animation-name: showPic;
     `;
@@ -110,7 +109,11 @@ const ImageViewer = (props) => {
         position: fixed;
         top: 20px;
         right: 20px;
-        //background-color: mediumpurple;
+        &:hover span::before,
+        &:hover span::after {
+          background-color: gray;
+          transition: all .4s ease;
+        }         
       `;
       const CloseBtn = styled.div`
         display: flex;
@@ -123,7 +126,7 @@ const ImageViewer = (props) => {
         transition: all .4s ease;
         &:hover {
           cursor: pointer;
-        }        
+        }      
       `;
       const Pseudo = styled.span`
         &::before,
@@ -135,6 +138,7 @@ const ImageViewer = (props) => {
           margin-left: -10px;
           width: 30px;
           background-color: darkgray;
+          transition: all .4s ease;
         }
         &::before {
           transform: rotate(-45deg);
@@ -167,7 +171,7 @@ const ImageViewer = (props) => {
                   <ImageChangerBtn leftSide='left: 20px;'/>
                 </Link>
             }
-            { item.pathId >= ImagesAmount.length ?
+            { item.pathId >= imageCollection.length ?
             null :
                 <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
                   <ImageChangerBtn rightSide='right: 20px;'/>
