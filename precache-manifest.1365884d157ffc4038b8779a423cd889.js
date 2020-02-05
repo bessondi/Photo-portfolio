@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10609a98f21540a57850deb431567416",
+    "revision": "ae30bee2eba773d603f895c1266ecf79",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "4f29f8403b8bce016564",
-    "url": "/Photo-portfolio/static/css/main.d8d71693.chunk.css"
+    "revision": "c67d584fe4b1b75b6e27",
+    "url": "/Photo-portfolio/static/css/main.f4a5c727.chunk.css"
   },
   {
-    "revision": "9d5f5e86302d29c33194",
-    "url": "/Photo-portfolio/static/js/2.2cd8d407.chunk.js"
+    "revision": "76a8ef9fa42bb409ae7c",
+    "url": "/Photo-portfolio/static/js/2.08770bbb.chunk.js"
   },
   {
     "revision": "362df10572b0abfdaf60a2f26adf4eb8",
-    "url": "/Photo-portfolio/static/js/2.2cd8d407.chunk.js.LICENSE"
+    "url": "/Photo-portfolio/static/js/2.08770bbb.chunk.js.LICENSE"
   },
   {
-    "revision": "4f29f8403b8bce016564",
-    "url": "/Photo-portfolio/static/js/main.c6b5123e.chunk.js"
+    "revision": "c67d584fe4b1b75b6e27",
+    "url": "/Photo-portfolio/static/js/main.81f8223c.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",
@@ -38,14 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6b28c5938d1e4c3f29ef00f27b021303",
     "url": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf"
-  },
-  {
-    "revision": "d99368ca4e133a9917838e76243e8cfb",
-    "url": "/Photo-portfolio/static/media/facebook.d99368ca.svg"
-  },
-  {
-    "revision": "fc8e2097b4185c51bc1f1bdd714944ff",
-    "url": "/Photo-portfolio/static/media/facebook_white.fc8e2097.svg"
   },
   {
     "revision": "06ae70d1a5c1b1b167768ee5f5bb2594",
@@ -1016,8 +1008,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/instagram.5b23a837.svg"
   },
   {
-    "revision": "a981755a26b0612510f69a2199bc5edb",
-    "url": "/Photo-portfolio/static/media/instagram_white.a981755a.svg"
+    "revision": "47f88e10144b3ca651584f72d0fddd2b",
+    "url": "/Photo-portfolio/static/media/instagram_white.47f88e10.svg"
   },
   {
     "revision": "589796a1ecdbfceeb51af068b2418d3c",
@@ -1028,7 +1020,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/telegram.b91cc43e.svg"
   },
   {
-    "revision": "1a47c5981af9474dde7cd8a99cc17b3e",
-    "url": "/Photo-portfolio/static/media/telegram_white.1a47c598.svg"
+    "revision": "c79a0df0bdad951983b81434a6990051",
+    "url": "/Photo-portfolio/static/media/telegram_white.c79a0df0.svg"
   }
 ]);

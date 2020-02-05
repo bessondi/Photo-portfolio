@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/Photo-portfolio/static/css/main.d8d71693.chunk.css",
-    "main.js": "/Photo-portfolio/static/js/main.c6b5123e.chunk.js",
-    "main.js.map": "/Photo-portfolio/static/js/main.c6b5123e.chunk.js.map",
+    "main.css": "/Photo-portfolio/static/css/main.f4a5c727.chunk.css",
+    "main.js": "/Photo-portfolio/static/js/main.81f8223c.chunk.js",
+    "main.js.map": "/Photo-portfolio/static/js/main.81f8223c.chunk.js.map",
     "runtime-main.js": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js",
     "runtime-main.js.map": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js.map",
-    "static/js/2.2cd8d407.chunk.js": "/Photo-portfolio/static/js/2.2cd8d407.chunk.js",
-    "static/js/2.2cd8d407.chunk.js.map": "/Photo-portfolio/static/js/2.2cd8d407.chunk.js.map",
+    "static/js/2.08770bbb.chunk.js": "/Photo-portfolio/static/js/2.08770bbb.chunk.js",
+    "static/js/2.08770bbb.chunk.js.map": "/Photo-portfolio/static/js/2.08770bbb.chunk.js.map",
     "index.html": "/Photo-portfolio/index.html",
-    "precache-manifest.8f0ee07fd1675c6fd8c0b2ee9171fab5.js": "/Photo-portfolio/precache-manifest.8f0ee07fd1675c6fd8c0b2ee9171fab5.js",
+    "precache-manifest.1365884d157ffc4038b8779a423cd889.js": "/Photo-portfolio/precache-manifest.1365884d157ffc4038b8779a423cd889.js",
     "service-worker.js": "/Photo-portfolio/service-worker.js",
-    "static/css/main.d8d71693.chunk.css.map": "/Photo-portfolio/static/css/main.d8d71693.chunk.css.map",
-    "static/js/2.2cd8d407.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.2cd8d407.chunk.js.LICENSE",
+    "static/css/main.f4a5c727.chunk.css.map": "/Photo-portfolio/static/css/main.f4a5c727.chunk.css.map",
+    "static/js/2.08770bbb.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.08770bbb.chunk.js.LICENSE",
     "static/media/App.css": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf",
-    "static/media/facebook.svg": "/Photo-portfolio/static/media/facebook.d99368ca.svg",
-    "static/media/facebook_white.svg": "/Photo-portfolio/static/media/facebook_white.fc8e2097.svg",
     "static/media/image_1.jpg": "/Photo-portfolio/static/media/image_1.bc590cf8.jpg",
     "static/media/image_10.jpg": "/Photo-portfolio/static/media/image_10.7a8fdf7e.jpg",
     "static/media/image_11.jpg": "/Photo-portfolio/static/media/image_11.cf3a816c.jpg",
@@ -72,15 +70,15 @@
     "static/media/image_8.jpg": "/Photo-portfolio/static/media/image_8.f54d4fcc.jpg",
     "static/media/image_9.jpg": "/Photo-portfolio/static/media/image_9.8613c56c.jpg",
     "static/media/instagram.svg": "/Photo-portfolio/static/media/instagram.5b23a837.svg",
-    "static/media/instagram_white.svg": "/Photo-portfolio/static/media/instagram_white.a981755a.svg",
+    "static/media/instagram_white.svg": "/Photo-portfolio/static/media/instagram_white.47f88e10.svg",
     "static/media/me.jpg": "/Photo-portfolio/static/media/me.589796a1.jpg",
     "static/media/telegram.svg": "/Photo-portfolio/static/media/telegram.b91cc43e.svg",
-    "static/media/telegram_white.svg": "/Photo-portfolio/static/media/telegram_white.1a47c598.svg"
+    "static/media/telegram_white.svg": "/Photo-portfolio/static/media/telegram_white.c79a0df0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ff9fbecd.js",
-    "static/js/2.2cd8d407.chunk.js",
-    "static/css/main.d8d71693.chunk.css",
-    "static/js/main.c6b5123e.chunk.js"
+    "static/js/2.08770bbb.chunk.js",
+    "static/css/main.f4a5c727.chunk.css",
+    "static/js/main.81f8223c.chunk.js"
   ]
 }
