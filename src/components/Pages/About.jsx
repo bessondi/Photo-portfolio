@@ -11,7 +11,7 @@ function About() {
   const Wrapper = styled.div`
     max-width: 100%;
     max-height: 100%;
-    margin-top: 120px;
+    margin-top: 100px;
     //background-color: #fafafa;
   `;
   const Grid = styled.div`
@@ -33,7 +33,9 @@ function About() {
     @media screen and (max-width: 992px) {
       display: flex;
       flex-flow: column;
+      justify-content: space-between;
       margin: 0 40px;
+      min-height: 700px;
     }
   `;
   const Image = styled.img`
@@ -69,7 +71,7 @@ function About() {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    height: 80px;
+    height: 50px;
     width: 200px;
     margin: auto;
   `;

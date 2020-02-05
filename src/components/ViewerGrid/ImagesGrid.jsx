@@ -116,6 +116,7 @@ class ImagesGrid extends Component {
       return <VerticalGrid key={id} />;
     });
 
+
     const Line = styled.div`
     display: flex;
     flex-direction: ${this.props.direction || `column`};
@@ -132,7 +133,7 @@ class ImagesGrid extends Component {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    /* ${this.props.add}; */
+    ${this.props.add};
   `;
 
     return <Line className={`${s.column}`}>{ImagesFlow}</Line>;

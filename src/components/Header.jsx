@@ -51,7 +51,7 @@ function Header() {
     background-color: #fff;
     z-index: 5;
     @media screen and (max-width: 576px) {
-      height: 80px;
+      height: 70px;
     }
   `;
 

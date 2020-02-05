@@ -36,7 +36,7 @@ function MainPage() {
       width: 100%;
       overflow: hidden;
       @media screen and (max-width: 576px) {
-        max-height: calc(100vh - 80px);
+        max-height: calc(100vh - 70px);
       }
     `;
 
