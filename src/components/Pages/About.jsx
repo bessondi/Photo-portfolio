@@ -27,6 +27,7 @@ function About() {
     grid-template-rows:  repeat(3, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
+      ". . ."
       ". photo ."
       ". description ."
       ". social .";
@@ -34,8 +35,10 @@ function About() {
       display: flex;
       flex-flow: column;
       justify-content: space-between;
-      margin: 0 40px;
-      min-height: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
+      min-height: 800px;
+      max-width: 500px;
     }
   `;
   const Image = styled.img`
@@ -71,7 +74,7 @@ function About() {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    height: 50px;
+    height: 80px;
     width: 200px;
     margin: auto;
   `;

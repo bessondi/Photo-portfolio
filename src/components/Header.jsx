@@ -99,7 +99,6 @@ function Header() {
     width: 700px;
     margin-right: -25px;
     transition: all 0.5s ease;
-
     @media screen and (max-width: 992px) {
       display: none;
     }
@@ -114,14 +113,12 @@ function Header() {
     font-size: 1.5rem;
     font-weight: 700;
     font-family: "Circe Bold", sans-serif;
-
     transition: all 0.5s ease;
     &:hover {
       color: #5f23bc;
       transition: all 0.3s ease;
-      transform: translateX(-5px);
+      transform: translateX(-5px); 
     }
-   
     @media screen and (max-width: 1200px) {
       font-size: 1.5rem;
     } 
@@ -178,7 +175,7 @@ function Header() {
             <NavItem>models tests</NavItem>
           </NavLink>
 
-          <NavLink to="/about" activeClassName={s.activeLink}>
+          <NavLink to="/about" activeClassName={s.activeLinkAbout}>
             <NavItem>about</NavItem>
           </NavLink>
         </Nav>
