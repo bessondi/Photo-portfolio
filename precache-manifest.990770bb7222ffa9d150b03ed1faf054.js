@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0469951b5ad7720a2fcdb017bfee7c3",
+    "revision": "daf9a47b20a99b097b6b43280dd16ac6",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "3ba633ccd0d1da2d3e84",
-    "url": "/Photo-portfolio/static/css/main.c60c50d5.chunk.css"
+    "revision": "723d5abc4286f4329f47",
+    "url": "/Photo-portfolio/static/css/main.2ad6acb9.chunk.css"
   },
   {
     "revision": "02532fbdf94d96915f88",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js.LICENSE"
   },
   {
-    "revision": "3ba633ccd0d1da2d3e84",
-    "url": "/Photo-portfolio/static/js/main.a90bfd20.chunk.js"
+    "revision": "723d5abc4286f4329f47",
+    "url": "/Photo-portfolio/static/js/main.85d01315.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",
@@ -1064,8 +1064,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/instagram.5b23a837.svg"
   },
   {
-    "revision": "47f88e10144b3ca651584f72d0fddd2b",
-    "url": "/Photo-portfolio/static/media/instagram_white.47f88e10.svg"
+    "revision": "a981755a26b0612510f69a2199bc5edb",
+    "url": "/Photo-portfolio/static/media/instagram_white.a981755a.svg"
   },
   {
     "revision": "589796a1ecdbfceeb51af068b2418d3c",
@@ -1076,7 +1076,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/telegram.b91cc43e.svg"
   },
   {
-    "revision": "c79a0df0bdad951983b81434a6990051",
-    "url": "/Photo-portfolio/static/media/telegram_white.c79a0df0.svg"
+    "revision": "1a47c5981af9474dde7cd8a99cc17b3e",
+    "url": "/Photo-portfolio/static/media/telegram_white.1a47c598.svg"
   }
 ]);
