@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "daf9a47b20a99b097b6b43280dd16ac6",
+    "revision": "a517aa187d8d01860643c02ba4322b0b",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "723d5abc4286f4329f47",
-    "url": "/Photo-portfolio/static/css/main.2ad6acb9.chunk.css"
+    "revision": "570acbf92c0faeeefd40",
+    "url": "/Photo-portfolio/static/css/main.b7b2759b.chunk.css"
   },
   {
-    "revision": "02532fbdf94d96915f88",
-    "url": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js"
+    "revision": "c82bcd2ad8f9d87e0140",
+    "url": "/Photo-portfolio/static/js/2.64e90a95.chunk.js"
   },
   {
     "revision": "362df10572b0abfdaf60a2f26adf4eb8",
-    "url": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js.LICENSE"
+    "url": "/Photo-portfolio/static/js/2.64e90a95.chunk.js.LICENSE"
   },
   {
-    "revision": "723d5abc4286f4329f47",
-    "url": "/Photo-portfolio/static/js/main.85d01315.chunk.js"
+    "revision": "570acbf92c0faeeefd40",
+    "url": "/Photo-portfolio/static/js/main.bc5ec3ba.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Photo-portfolio/static/css/main.2ad6acb9.chunk.css",
-    "main.js": "/Photo-portfolio/static/js/main.85d01315.chunk.js",
-    "main.js.map": "/Photo-portfolio/static/js/main.85d01315.chunk.js.map",
+    "main.css": "/Photo-portfolio/static/css/main.b7b2759b.chunk.css",
+    "main.js": "/Photo-portfolio/static/js/main.bc5ec3ba.chunk.js",
+    "main.js.map": "/Photo-portfolio/static/js/main.bc5ec3ba.chunk.js.map",
     "runtime-main.js": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js",
     "runtime-main.js.map": "/Photo-portfolio/static/js/runtime-main.ff9fbecd.js.map",
-    "static/js/2.b6f639c5.chunk.js": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js",
-    "static/js/2.b6f639c5.chunk.js.map": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js.map",
+    "static/js/2.64e90a95.chunk.js": "/Photo-portfolio/static/js/2.64e90a95.chunk.js",
+    "static/js/2.64e90a95.chunk.js.map": "/Photo-portfolio/static/js/2.64e90a95.chunk.js.map",
     "index.html": "/Photo-portfolio/index.html",
-    "precache-manifest.990770bb7222ffa9d150b03ed1faf054.js": "/Photo-portfolio/precache-manifest.990770bb7222ffa9d150b03ed1faf054.js",
+    "precache-manifest.22a6b502af7d6a2183b3b48cbb950492.js": "/Photo-portfolio/precache-manifest.22a6b502af7d6a2183b3b48cbb950492.js",
     "service-worker.js": "/Photo-portfolio/service-worker.js",
-    "static/css/main.2ad6acb9.chunk.css.map": "/Photo-portfolio/static/css/main.2ad6acb9.chunk.css.map",
-    "static/js/2.b6f639c5.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.b6f639c5.chunk.js.LICENSE",
+    "static/css/main.b7b2759b.chunk.css.map": "/Photo-portfolio/static/css/main.b7b2759b.chunk.css.map",
+    "static/js/2.64e90a95.chunk.js.LICENSE": "/Photo-portfolio/static/js/2.64e90a95.chunk.js.LICENSE",
     "static/media/App.css": "/Photo-portfolio/static/media/Circe-Regular.6b28c593.ttf",
     "static/media/image_1.jpg": "/Photo-portfolio/static/media/image_1.bc590cf8.jpg",
     "static/media/image_10.jpg": "/Photo-portfolio/static/media/image_10.bbc2d7b0.jpg",
@@ -79,8 +79,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ff9fbecd.js",
-    "static/js/2.b6f639c5.chunk.js",
-    "static/css/main.2ad6acb9.chunk.css",
-    "static/js/main.85d01315.chunk.js"
+    "static/js/2.64e90a95.chunk.js",
+    "static/css/main.b7b2759b.chunk.css",
+    "static/js/main.bc5ec3ba.chunk.js"
   ]
 }
