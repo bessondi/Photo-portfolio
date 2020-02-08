@@ -38,7 +38,7 @@ class NavSideBar extends Component {
         color: #fff;
         /* text-decoration: none; */
         @media screen and (max-width: 576px) {
-          font-size: 2.4rem;
+          font-size: 2rem;
         }
       }
       &>a:hover {
@@ -65,7 +65,7 @@ class NavSideBar extends Component {
         transition: all 0.3s ease;  
       }
       @media screen and (max-width: 576px) {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
     `;
     const Mail = styled.a`

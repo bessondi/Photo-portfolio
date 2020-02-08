@@ -39,14 +39,18 @@ const ImageViewer = (props) => {
 
     const Wrapper = styled.div`
       display: flex;
-      flex-direction: column;
+      //flex-direction: column;
       //justify-content: center;
       //align-items: center;
-      position: fixed;
+      position: absolute;
       top: 0;
-      //bottom: 20px;
+      left: 0;
+      right: 0;
+      bottom:0;
       width: 100%;
       height: 100vh;
+      max-width: 2000px;
+      margin: 0 auto;
       //height: calc(100vh - 120px);
       //background-color: rgba(0,0,0,0.95);
       background-color: #fff;
@@ -67,7 +71,7 @@ const ImageViewer = (props) => {
 
     const ImageChangerBtn = styled.div`
       display: flex;
-      position: fixed;
+      position: absolute;
       top: 50%;
       width: 20px;
       height: 20px;
@@ -106,7 +110,7 @@ const ImageViewer = (props) => {
       const Wrapper = styled.div`
         width: 45px;
         height: 45px;
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
         &:hover span::before,

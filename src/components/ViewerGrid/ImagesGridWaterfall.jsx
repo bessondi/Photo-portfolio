@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import s from "../Pages/MainPage.module.css";
 
-class ImagesGrid extends Component {
+class ImagesGridWaterfall extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,9 +39,9 @@ class ImagesGrid extends Component {
           animation-duration: 1s;
           animation-name: showPic;
           @media screen and (max-width: 576px) {
+            /* margin: ${this.props.margin || `5px 0`}; */
             margin: 5px 0;
-            padding-right: 10px;
-            max-width: 100%;
+            /* max-width: 100%; */
           }
         `;
         const ImageDescription = styled.div`
@@ -147,4 +147,4 @@ class ImagesGrid extends Component {
   }
 }
 
-export default ImagesGrid;
+export default ImagesGridWaterfall;

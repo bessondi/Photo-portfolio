@@ -5,23 +5,13 @@ import styled from "styled-components";
 // import s from "./MainPage.module.css";
 import {ContentData} from "../ContentData";
 
-// import ImagesGrid from '../ViewerGrid/ImagesGrid';
+import ImagesGrid from '../ViewerGrid/ImagesGrid';
 import ImagesGridWaterfall from "../ViewerGrid/ImagesGridWaterfall";
 
 
 // const LazyImage = React.lazy(() => import('./LazyImage'));
 
-// class MainPage extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       // images: ContentData,
-//     };
-//   }
-//
-//   render() {
-
-function MainPage() {
+function Waterfall() {
 
     const {
       beautyForMainPage,
@@ -48,12 +38,6 @@ function MainPage() {
         flex-flow: row nowrap;
         justify-content: space-around;
         padding: 0 10px;
-        max-width: 2000px;
-        margin: 0 auto;
-
-        @media screen and (max-width: 576px) {
-          padding: 0;
-        }
       `;
 
       return (
@@ -66,12 +50,11 @@ function MainPage() {
       );
     };
 
-    return (
-        <Wrapper>
-            <BrickColumns/>
-        </Wrapper>
-    );
-  }
-// }
+  return (
+      <Wrapper>
+          <BrickColumns/>
+      </Wrapper>
+  );
+}
 
-export default MainPage;
+export default Waterfall;

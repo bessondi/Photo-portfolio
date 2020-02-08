@@ -61,6 +61,11 @@ function Header() {
     align-items: center;
     width: 100%;
     padding: 10px 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+    @media screen and (max-width: 576px) {
+      padding: 10px;
+    }
   `;
 
   const PageTitle = styled.div`

@@ -9,6 +9,12 @@
   transition: all .3s ease-in-out;
 }
 
+@media screen and (max-width: 576px) {
+  .column:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .column:nth-child(2),
   .column:nth-child(4) {
