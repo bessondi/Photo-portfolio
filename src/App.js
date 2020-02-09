@@ -7,6 +7,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainPage from "./components/Pages/MainPage";
+// import MainPageWaterfall from "./components/Pages/MainPageWaterfall";
+
 import About from "./components/Pages/About";
 import Page404 from "./components/Pages/Page404";
 
@@ -22,6 +24,9 @@ export default function App() {
         <Header/>
         <Switch>
           <Route path='/' exact component={MainPage}/>
+
+          {/*<Route path='/' exact component={MainPageWaterfall}/>*/}
+          {/*<Route path='/' exact render={(routeProps) => (<MainPageWaterfall {...routeProps} delay='1000' isAnimation='false'/>)}/>*/}
 
           <Route path='/beauty' component={ViewerGridBeauty}/>
           <Route path='/product-photography' component={ViewerGridProduct}/>

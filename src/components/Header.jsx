@@ -43,6 +43,7 @@ function Header() {
   const Header = styled.header`
     display: flex;
     align-items: center;
+    //justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +62,7 @@ function Header() {
     align-items: center;
     width: 100%;
     padding: 10px 20px;
-    max-width: 2000px;
+    max-width: 1960px;
     margin: 0 auto;
     @media screen and (max-width: 576px) {
       padding: 10px;

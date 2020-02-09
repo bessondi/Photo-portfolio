@@ -1,49 +1,90 @@
 import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import LazyLoad from 'react-lazy-load';
 
 import s from "../Pages/MainPage.module.css";
 
-class ImagesGridWaterfall extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      // currentViewImage: this.props.content[0]
-    };
-  }
-
-  componentDidMount = () => {
-    window.scrollTo(0, 0);
-  };
-
-  render() {
+// class ImagesGridWaterfall extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       // currentViewImage: this.props.content[0]
+//     };
+//   }
+//
+//   componentDidMount = () => {
+//     window.scrollTo(0, 0);
+//   };
+//
+//   render() {
     // console.log(this.state.currentViewImage);
 
-    // const ImagesGrid = props => {
+    const ImagesGridWaterfall = props => {
 
-    const images = this.props.content;
+    const images = props.content;
     // path = this.props.content;
 
     const ImagesFlow = images.map((img, id) => {
+
       const VerticalGrid = () => {
+
         const Image = styled.img`
           display: block;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          width: ${this.props.width || "100%"};
-          max-width: ${this.props.maxWidth || `500px`};
-          max-height: ${this.props.maxHeight || `700px`};
-          margin: ${this.props.margin || `10px 0`};
-          border-radius: ${this.props.radius || `10px`};
+          width: 100%;
+          max-width: 500px;
+          max-height: 700px;
+          margin: 10px 0;
+          border-radius: 10px;
           animation-duration: 1s;
           animation-name: showPic;
           @media screen and (max-width: 576px) {
-            /* margin: ${this.props.margin || `5px 0`}; */
             margin: 5px 0;
-            /* max-width: 100%; */
           }
         `;
+
+        // const Plug = styled.picture`
+        //   display: grid;
+        //   background-color: olive;
+        //   //width: 100%;
+        //   //height: 100%;
+        //
+        //   //min-width: 100px;
+        //   //min-height: 200px;
+        //   //display: flex;
+        //   //max-height: 700px;
+        //   //overflow: hidden;
+        //
+        //   margin: 10px 0;
+        //   border-radius: 10px;
+        //   animation-duration: 1.5s;
+        //   animation-name: showPic;
+        // `;
+
+        // const Image = styled.div`
+        //   display: block;
+        //   //position: relative;
+        //   background-image: url(${images[id].picture});
+        //   background-color: darkgray;
+        //   background-position: center;
+        //   background-repeat: no-repeat;
+        //   background-size: cover;
+        //   width: 100%;
+        //   height: 100%;
+        //   min-width: 500px;
+        //   min-height: 700px;
+        //   margin: 10px auto;
+        //   border-radius: 10px;
+        //   animation-duration: 1s;
+        //   animation-name: showPic;
+        //   @media screen and (max-width: 576px) {
+        //     margin: 5px 0;
+        //   }
+        // `;
+
         const ImageDescription = styled.div`
           position: absolute;
           top: 0;
@@ -63,7 +104,7 @@ class ImagesGridWaterfall extends Component {
           }
         `;
         const Text = styled.div`
-          ${this.props.hoverNone ? `display: none;` : null};
+          ${props.hoverNone ? `display: none;` : null};
         `;
         const Separator = styled.div`
           width: 30px;
@@ -75,15 +116,7 @@ class ImagesGridWaterfall extends Component {
             display: none;
           }
         `;
-        // const Plug = styled.div`
-        //   background-color: #ebebeb;
-        //   width: 300px;
-        //   height: 400px;
-        //   margin: 10px 0;
-        //   border-radius: 10px;
-        //   animation-duration: 1s;
-        //   animation-name: showPic;
-        // `;
+
         // const Wrapper = styled.div`
         //   display: flex;
         //   //padding: 0 10px;
@@ -122,29 +155,29 @@ class ImagesGridWaterfall extends Component {
     });
 
 
+
     const Line = styled.div`
     display: flex;
-    flex-direction: ${this.props.direction || `column`};
+    flex-direction: column;
     padding: 0 10px;
-    justify-content: ${this.props.justify || `flex-start`};
-    flex-wrap: ${this.props.wrap || `nowrap`};
-    max-width: 2000px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 1500px;
+    //max-width: 2000px;
     margin: 0 auto;
-    /* ${this.props.animation ||
-      `animation: ${this.props.duration} linear 0.01s ${this.props.slide} infinite`}; */
-    animation-name: ${this.props.slide};
-    animation-duration: ${this.props.duration};
+
+    animation-name: ${props.slide};
+    animation-duration: ${props.duration};
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    ${this.props.add};
   `;
 
     return <Line className={`${s.column}`}>{ImagesFlow}</Line>;
-  }
-}
+  };
+// }
 
 export default ImagesGridWaterfall;
