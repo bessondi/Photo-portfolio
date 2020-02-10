@@ -55,7 +55,6 @@ const ImageViewer = (props) => {
       //background-color: rgba(0,0,0,0.95);
       background-color: #fff;
       z-index: 10;
-      overflow: scroll;
     `;
 
     const Image = styled.img`
