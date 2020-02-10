@@ -55,6 +55,7 @@ const ImageViewer = (props) => {
       //background-color: rgba(0,0,0,0.95);
       background-color: #fff;
       z-index: 10;
+      overflow: scroll;
     `;
 
     const Image = styled.img`
@@ -82,9 +83,9 @@ const ImageViewer = (props) => {
       transition: all .4s ease;
       ${ props => {
         if (props.leftSide) {
-          return `${props.leftSide}`;
+          return `left:${props.leftSide}px;`;
         } else if (props.rightSide) {
-          return `${props.rightSide}`;
+          return `right:${props.rightSide}px;`;
         }
       }};
       @media screen and (min-width: 992px) {
@@ -98,8 +99,15 @@ const ImageViewer = (props) => {
         };
       };
       @media screen and (max-width: 992px) {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        ${ props => {
+        if (props.leftSide) {
+          return `left:${props.leftSide-10}px;`;
+        } else if (props.rightSide) {
+          return `right:${props.rightSide-10}px;`;
+        }
+      }};
       }
       &:hover {
         cursor: pointer;
@@ -118,6 +126,10 @@ const ImageViewer = (props) => {
           background-color: gray;
           transition: all .4s ease;
         }         
+        @media screen and (max-width: 992px) {
+          top: 10px;
+          right: 10px;
+        }
       `;
       const CloseBtn = styled.div`
         display: flex;
@@ -172,13 +184,13 @@ const ImageViewer = (props) => {
             { item.pathId <= 1 ?
             null :
                 <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>
-                  <ImageChangerBtn leftSide='left: 20px;'/>
+                  <ImageChangerBtn leftSide='20'/>
                 </Link>
             }
             { item.pathId >= imageCollection.length ?
             null :
                 <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
-                  <ImageChangerBtn rightSide='right: 20px;'/>
+                  <ImageChangerBtn rightSide='20'/>
                 </Link>
             }
           </Wrapper>

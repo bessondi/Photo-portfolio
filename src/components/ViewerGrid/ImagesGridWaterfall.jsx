@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import styled, { keyframes } from "styled-components";
-import LazyLoad from 'react-lazy-load';
+import styled from "styled-components";
+// import LazyLoad from 'react-lazy-load';
 
 import s from "../Pages/MainPage.module.css";
 
@@ -162,8 +162,8 @@ import s from "../Pages/MainPage.module.css";
     padding: 0 10px;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    width: 1500px;
-    //max-width: 2000px;
+    width: 100%;
+    max-width: 2000px;
     margin: 0 auto;
 
     animation-name: ${props.slide};
@@ -174,6 +174,10 @@ import s from "../Pages/MainPage.module.css";
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
+
+    @media screen and (max-width: 576px) {
+      animation: none;
+    }
   `;
 
     return <Line className={`${s.column}`}>{ImagesFlow}</Line>;

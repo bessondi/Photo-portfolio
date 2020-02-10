@@ -11,8 +11,11 @@ const ViewerGridProduct = () => {
   const {productForGridSection, productFullSize} = ContentData;
 
   const Wrapper = styled.div`
-      display: flex;
-      margin: 100px auto 0;
+    display: flex;
+    margin: 100px auto 0;
+    @media screen and (max-width: 576px) {
+      margin: 70px auto 10px;
+    }
   `;
 
   return (
