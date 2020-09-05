@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f371fbfc06d741dd472788477592bb0c",
+    "revision": "e8dc2ac5fb04ee352b62262fbf9d7be2",
     "url": "/Photo-portfolio/index.html"
   },
   {
-    "revision": "987344f20a5c2ce6dbbb",
-    "url": "/Photo-portfolio/static/css/main.b7b2759b.chunk.css"
+    "revision": "f07aa20c01211cae9f93",
+    "url": "/Photo-portfolio/static/css/main.320ab16b.chunk.css"
   },
   {
-    "revision": "5319a03b370ab9e69142",
-    "url": "/Photo-portfolio/static/js/2.ff64e293.chunk.js"
+    "revision": "c30890f07c0e6b8e8110",
+    "url": "/Photo-portfolio/static/js/2.3331c29a.chunk.js"
   },
   {
     "revision": "362df10572b0abfdaf60a2f26adf4eb8",
-    "url": "/Photo-portfolio/static/js/2.ff64e293.chunk.js.LICENSE"
+    "url": "/Photo-portfolio/static/js/2.3331c29a.chunk.js.LICENSE"
   },
   {
-    "revision": "987344f20a5c2ce6dbbb",
-    "url": "/Photo-portfolio/static/js/main.e22f727e.chunk.js"
+    "revision": "f07aa20c01211cae9f93",
+    "url": "/Photo-portfolio/static/js/main.48b1a780.chunk.js"
   },
   {
     "revision": "3c2c9f2d7b94fbe4cbbc",
@@ -1064,8 +1064,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/instagram.5b23a837.svg"
   },
   {
-    "revision": "a981755a26b0612510f69a2199bc5edb",
-    "url": "/Photo-portfolio/static/media/instagram_white.a981755a.svg"
+    "revision": "47f88e10144b3ca651584f72d0fddd2b",
+    "url": "/Photo-portfolio/static/media/instagram_white.47f88e10.svg"
   },
   {
     "revision": "589796a1ecdbfceeb51af068b2418d3c",
@@ -1076,7 +1076,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Photo-portfolio/static/media/telegram.b91cc43e.svg"
   },
   {
-    "revision": "1a47c5981af9474dde7cd8a99cc17b3e",
-    "url": "/Photo-portfolio/static/media/telegram_white.1a47c598.svg"
+    "revision": "c79a0df0bdad951983b81434a6990051",
+    "url": "/Photo-portfolio/static/media/telegram_white.c79a0df0.svg"
   }
 ]);
