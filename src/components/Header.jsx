@@ -43,7 +43,6 @@ function Header() {
   const Header = styled.header`
     display: flex;
     align-items: center;
-    //justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +61,7 @@ function Header() {
     align-items: center;
     width: 100%;
     padding: 10px 20px;
-    max-width: 1960px;
+    max-width: 1560px;
     margin: 0 auto;
     @media screen and (max-width: 576px) {
       padding: 10px;
@@ -77,7 +76,6 @@ function Header() {
   const Title = styled.div`
     font-size: 2.5rem;
     font-weight: 900;
-    //letter-spacing: -1px;
     line-height: 90%;
     font-family: "Circe Extra Bold", sans-serif;
     & > :last-child {

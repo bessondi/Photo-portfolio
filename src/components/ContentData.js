@@ -130,8 +130,6 @@ import image4_55 from "../img/thumbnails/models/image_55.jpg";
 import image4_56 from "../img/thumbnails/models/image_56.jpg";
 import image4_57 from "../img/thumbnails/models/image_57.jpg";
 import image4_58 from "../img/thumbnails/models/image_58.jpg";
-// import image4_59 from "../img/thumbnails/models/imag9e_5.jpg";
-
 
 // full size for viewer
 import beautyImage1 from "../img/fullsize/beauty/image_1.jpg";
@@ -265,7 +263,6 @@ import modelsImage55 from "../img/fullsize/models/image_55.jpg";
 import modelsImage56 from "../img/fullsize/models/image_56.jpg";
 import modelsImage57 from "../img/fullsize/models/image_57.jpg";
 import modelsImage58 from "../img/fullsize/models/image_58.jpg";
-// import modelsImage59 from "../img/fullsize/models/image_59.jpg";
 
 
 export const ContentData = {

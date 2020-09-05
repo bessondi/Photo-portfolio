@@ -9,9 +9,6 @@ class Page404 extends Component {
   };
 
   render() {
-    
-    // const Page404 = () => {
-
     const Wrapper = styled.div`
       display: flex;
       flex-direction: column;

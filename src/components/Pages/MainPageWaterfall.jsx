@@ -6,7 +6,7 @@ import styled, {keyframes} from "styled-components";
 import {ContentData} from "../ContentData";
 
 // import ImagesGrid from '../ViewerGrid/ImagesGrid';
-import ImagesGridWaterfall from "../ViewerGrid/ImagesGridWaterfall";
+import ImagesFlow from "../ViewerGrid/ImagesFlow";
 
 
 // const LazyImage = React.lazy(() => import('./LazyImage'));
@@ -102,10 +102,10 @@ class MainPageWaterfall extends Component {
 
       return (
         <FourColumns>
-          <ImagesGridWaterfall slide={SlideUp} duration="100s" content={beautyForMainPage}/>
-          <ImagesGridWaterfall slide={SlideDown} duration="130s" content={productForMainPage}/>
-          <ImagesGridWaterfall slide={SlideUp} duration="150s" content={portraitsForMainPage}/>
-          <ImagesGridWaterfall slide={SlideDown} duration="90s" content={modelsForMainPage}/>
+          <ImagesFlow slide={SlideUp} duration="100s" content={beautyForMainPage}/>
+          <ImagesFlow slide={SlideDown} duration="130s" content={productForMainPage}/>
+          <ImagesFlow slide={SlideUp} duration="150s" content={portraitsForMainPage}/>
+          <ImagesFlow slide={SlideDown} duration="90s" content={modelsForMainPage}/>
         </FourColumns>
       );
   };
