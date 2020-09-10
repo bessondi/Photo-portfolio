@@ -21,9 +21,11 @@ class ImagesGrid extends Component {
           margin: 10px;
           transition: 0.3s;
           
-          &:hover {
-            opacity: 0.7;
-            transition: 0.3s;
+          @media screen and (min-width: 992px) {
+            &:hover {
+              opacity: 0.7;
+              transition: 0.3s;
+            }
           }
         `;
 
