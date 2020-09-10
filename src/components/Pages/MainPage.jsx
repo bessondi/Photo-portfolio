@@ -4,8 +4,8 @@ import {ContentData} from "../ContentData";
 // import {HashLink as Link} from "react-router-hash-link";
 // import LazyLoad from 'react-lazy-load';
 // import s from "./MainPage.module.css";
-// import ImagesGrid from '../ViewerGrid/ImagesGrid';
-import ImagesFlow from "../ViewerGrid/ImagesFlow";
+// import ImagesGrid from '../Viewer/ImagesGrid';
+import ImagesFlow from "../Viewer/ImagesFlow";
 
 
 function MainPage() {

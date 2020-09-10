@@ -4,9 +4,10 @@ import styled from "styled-components";
 
 import s from './NavSideBar.module.css';
 
-import instagram from "../../img/icons/instagram_white.svg";
-// import facebook from "../../img/icons/facebook_white.svg";
-import telegram from "../../img/icons/telegram_white.svg";
+import instagram from "../../img/icons/instagram.svg";
+import telegram from "../../img/icons/telegram.svg";
+import facebook from "../../img/icons/facebook.svg";
+import github from '../../img/icons/github.svg'
 
 
 class NavSideBar extends Component {
@@ -31,16 +32,15 @@ class NavSideBar extends Component {
       align-content: center;
     `;
     const ListItems = styled.li`
-      /* padding: 10px 0; */
       &>a {
         font-size: 3rem;
         font-family: "Circe Extra Bold", sans-serif;
         color: #fff;
-        /* text-decoration: none; */
         @media screen and (max-width: 576px) {
           font-size: 2rem;
         }
       }
+      
       &>a:hover {
         color: #5f23bc;
       }
@@ -72,11 +72,7 @@ class NavSideBar extends Component {
       font-size: 1.4rem;
       color: #fff;
       margin-top: -15px;
-      transition: all 0.3s ease;  
-      &:hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease;  
-      }
+      transition: all 0.3s ease;
     `;
     const SocialMedia = styled.div`
       display: flex;
@@ -88,12 +84,10 @@ class NavSideBar extends Component {
       width: 50px;
       height: 50px;
       transition: all 0.3s ease;  
-      margin: 0 20px;
-      &:hover {
-        transform: scale(1.1);
-        transition: all 0.3s ease;  
-      }
+      margin: 0 10px;
+      filter: invert(94%) sepia(0%) saturate(7494%) hue-rotate(317deg) brightness(106%) contrast(109%);
     `;
+
     return (
         <React.Fragment>
 
@@ -111,11 +105,7 @@ class NavSideBar extends Component {
                   ? `${s.leftMenuSection_active}`
                   : `${s.leftMenuSection_closed}`}
           >
-            <List
-                // className={this.state.activeMenu
-                // ? `${s.listItems_active}`
-                // : `${s.listItems}`}
-            >
+            <List>
               <ListItems><Link to='/beauty' onClick={this.toggleMenuClass}>Beauty</Link></ListItems>
               <ListItems><Link to='/product-photography' onClick={this.toggleMenuClass}>Product</Link></ListItems>
               <ListItems><Link to='/portraits' onClick={this.toggleMenuClass}>Portraits</Link></ListItems>
@@ -127,17 +117,14 @@ class NavSideBar extends Component {
               ? `${s.rightMenuSection_active}`
               : `${s.rightMenuSection_closed}`}
           >
-            <Contacts
-                // className={this.state.activeMenu
-                // ? `${s.listItems_active}`
-                // : `${s.listItems}`}
-            >
+            <Contacts>
               <Link to='/about' onClick={this.toggleMenuClass}><ContactsTitle>About</ContactsTitle></Link>
               <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
               <SocialMedia>
                 <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-                {/*<a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>*/}
                 <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
+                <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+                <a href='https://github.com/bessondi'><Icon src={github} alt='github'/></a>
               </SocialMedia>
             </Contacts>
           </div>

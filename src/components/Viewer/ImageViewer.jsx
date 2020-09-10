@@ -6,42 +6,13 @@ import {Route} from "react-router-dom";
 
 const ImageViewer = (props) => {
 
-  // prevImg = () => {
-  // 			let newIndex = this.state.image.index - 1;
-  // 			if (newIndex < 0) {
-  // 					this.setState({
-  // 							image: this.props.collection[this.state.collection.length-1] // last
-  // 					})
-  // 			} else {
-  // 					this.setState({
-  // 							image: this.props.collection[newIndex]
-  // 					})
-  // 			}
-  // 	};
-  //
-  // nextImg = () => {
-  // 	let newIndex = this.state.image.index + 1;
-  //   if (newIndex < this.state.collection.length) {
-  //     this.setState({
-  //       image: this.props.collection[newIndex]
-  //     });
-  //   } else {
-  //     this.setState({
-  //       image: this.props.collection[0]
-  //     });
-  //   }
-  // };
-
   const {closeImagePath} = props,
-      imageCollection = props.collection;
+    imageCollection = props.collection;
 
   const ImageTemplate = imageCollection.map((item, id) => {
 
     const Wrapper = styled.div`
       display: flex;
-      //flex-direction: column;
-      //justify-content: center;
-      //align-items: center;
       position: fixed;
       top: 0;
       left: 0;
@@ -51,12 +22,9 @@ const ImageViewer = (props) => {
       height: 100vh;
       max-width: 2000px;
       margin: 0 auto;
-      //height: calc(100vh - 120px);
-      //background-color: rgba(0,0,0,0.95);
       background-color: #fff;
       z-index: 10;
     `;
-
     const Image = styled.img`
       display: block;
       margin: auto;
@@ -68,7 +36,6 @@ const ImageViewer = (props) => {
       animation-duration: 1s;
       animation-name: showPic;
     `;
-
     const ImageChangerBtn = styled.div`
       display: flex;
       position: absolute;
@@ -78,15 +45,14 @@ const ImageViewer = (props) => {
 			background-color: darkgray;
 			border: 1px solid #fff;
 			border-radius: 50%;
-			//z-index: 15;
       transition: all .4s ease;
-      ${ props => {
-        if (props.leftSide) {
-          return `left:${props.leftSide}px;`;
-        } else if (props.rightSide) {
-          return `right:${props.rightSide}px;`;
-        }
-      }};
+      ${props => {
+      if (props.leftSide) {
+        return `left:${props.leftSide}px;`;
+      } else if (props.rightSide) {
+        return `right:${props.rightSide}px;`;
+      }
+    }};
       @media screen and (min-width: 992px) {
         &:hover {
           width: 25px;
@@ -100,13 +66,13 @@ const ImageViewer = (props) => {
       @media screen and (max-width: 992px) {
         width: 25px;
         height: 25px;
-        ${ props => {
-        if (props.leftSide) {
-          return `left:${props.leftSide-10}px;`;
-        } else if (props.rightSide) {
-          return `right:${props.rightSide-10}px;`;
-        }
-      }};
+        ${props => {
+      if (props.leftSide) {
+        return `left:${props.leftSide - 10}px;`;
+      } else if (props.rightSide) {
+        return `right:${props.rightSide - 10}px;`;
+      }
+    }};
       }
       &:hover {
         cursor: pointer;
@@ -137,7 +103,6 @@ const ImageViewer = (props) => {
         left: 20px;
         width: 30px;
         height: 4px;
-        //background-color: red;
         transition: all .4s ease;
         &:hover {
           cursor: pointer;
@@ -164,13 +129,13 @@ const ImageViewer = (props) => {
       `;
 
       return (
-          <Link to={closeImagePath}>
-            <Wrapper>
-              <CloseBtn>
-                <Pseudo/>
-              </CloseBtn>
-            </Wrapper>
-          </Link>
+        <Link to={closeImagePath}>
+          <Wrapper>
+            <CloseBtn>
+              <Pseudo/>
+            </CloseBtn>
+          </Wrapper>
+        </Link>
       )
     };
 
@@ -180,17 +145,17 @@ const ImageViewer = (props) => {
           <Wrapper>
             <ImageCloser/>
             <Image src={item.picture} alt="Image"/>
-            { item.pathId <= 1 ?
-            null :
-                <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>
-                  <ImageChangerBtn leftSide='20'/>
-                </Link>
+            {item.pathId <= 1 ?
+              null :
+              <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>
+                <ImageChangerBtn leftSide='20'/>
+              </Link>
             }
-            { item.pathId >= imageCollection.length ?
-            null :
-                <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
-                  <ImageChangerBtn rightSide='20'/>
-                </Link>
+            {item.pathId >= imageCollection.length ?
+              null :
+              <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
+                <ImageChangerBtn rightSide='20'/>
+              </Link>
             }
           </Wrapper>
         </React.Fragment>

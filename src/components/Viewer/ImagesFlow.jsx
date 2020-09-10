@@ -29,7 +29,6 @@ const ImagesFlow = props => {
     @media screen and (max-width: 576px) {
       animation: none;
       padding: 0 10px;
-     
       margin: 0;
     }
     
@@ -54,12 +53,9 @@ const ImagesFlow = props => {
           min-height: 350px;
           
           margin: 10px 0;
-          border-radius: 10px;
+          border-radius: 20px;
           animation-duration: 1s;
           animation-name: showPic;
-          @media screen and (max-width: 576px) {
-            //margin: 5px ;
-          }
         `;
       const ImageDescription = styled.div`
           position: absolute;
@@ -75,6 +71,7 @@ const ImagesFlow = props => {
           height: 100%;
           transition: all 0.3s ease-in-out;
           opacity: 0;
+          
           @media screen and (max-width: 992px) {
             display: none;
           }
