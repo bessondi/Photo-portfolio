@@ -19,26 +19,26 @@ const ViewerGridBeauty = () => {
   `;
 
   return (
-      <Wrapper>
-        <ImageViewer
-          collection={beautyFullSize}
-          closeImagePath='/beauty'
-        />
-        <ImagesGrid
-          direction='row'
-          wrap='wrap'
-          width='auto'
-          maxWidth='auto'
-          maxHeight='300px'
-          radius='0'
-          margin='10px'
-          padding='0'
-          justify='center'
-          hoverNone
-          add=''
-          content={beautyForGridSection}
-        />
-      </Wrapper>
+    <Wrapper>
+      <ImageViewer
+        collection={beautyFullSize}
+        closeImagePath='/beauty'
+      />
+      <ImagesGrid
+        direction='row'
+        wrap='wrap'
+        width='auto'
+        maxWidth='auto'
+        maxHeight='300px'
+        radius='0'
+        margin='10px'
+        padding='0'
+        justify='center'
+        hoverNone
+        add=''
+        content={beautyForGridSection}
+      />
+    </Wrapper>
   );
 };
 

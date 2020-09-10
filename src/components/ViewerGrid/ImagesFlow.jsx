@@ -14,7 +14,6 @@ const ImagesFlow = props => {
     padding: 0 10px;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    width: 100%;
     max-width: 2000px;
     margin: 0 auto;
 
@@ -29,6 +28,13 @@ const ImagesFlow = props => {
 
     @media screen and (max-width: 576px) {
       animation: none;
+      padding: 0 10px;
+     
+      margin: 0;
+    }
+    
+    @media screen and (min-width: 576px) {
+      width: 100%;
     }
   `;
 
@@ -52,7 +58,7 @@ const ImagesFlow = props => {
           animation-duration: 1s;
           animation-name: showPic;
           @media screen and (max-width: 576px) {
-            margin: 5px 0;
+            //margin: 5px ;
           }
         `;
       const ImageDescription = styled.div`
@@ -106,7 +112,7 @@ const ImagesFlow = props => {
     return <ImageCard key={id}/>
   });
 
-  return <FlowLine className={`${s.column}`}>{ flow }</FlowLine>;
+  return <FlowLine className={`${s.imagesFlow}`}>{ flow }</FlowLine>;
 };
 
 export default ImagesFlow;

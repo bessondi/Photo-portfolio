@@ -26,7 +26,6 @@ function MainPage() {
       width: 100%;
       overflow: hidden;
       @media screen and (max-width: 576px) {
-        /* max-height: calc(100vh - 70px); */
         max-height: 100%;
         overflow: scroll;
       }
@@ -45,6 +44,7 @@ function MainPage() {
       @media screen and (max-width: 576px) {
         padding: 0;
         margin-top: 70px;
+        flex-flow: column;
       }
     `;
 

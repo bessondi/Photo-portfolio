@@ -75,30 +75,10 @@ class ImagesGrid extends Component {
             display: none;
           }
         `;
-        // const Plug = styled.div`
-        //   background-color: #ebebeb;
-        //   width: 300px;
-        //   height: 400px;
-        //   margin: 10px 0;
-        //   border-radius: 10px;
-        //   animation-duration: 1s;
-        //   animation-name: showPic;
-        // `;
-        // const Wrapper = styled.div`
-        //   display: flex;
-        //   //padding: 0 10px;
-        //   align-items: center;
-        // `;
 
         return (
           <Link
             className={s.overlay}
-            // to={path ?
-            //     path[id].path :
-            //     `${images[id].path}`
-            // }
-
-            // to={path[id].path}
             to={images[id].path}
           >
             <ImageDescription className={s.overlayDescription}>
@@ -109,12 +89,6 @@ class ImagesGrid extends Component {
               </Text>
             </ImageDescription>
             <Image src={images[id].picture} alt="Image" />
-
-            {/* <Suspense fallback={ <Plug/> }>
-                <LazyLoad>
-                  <Image src={images[id].picture} alt="Image"/>
-                </LazyLoad>
-              </Suspense> */}
           </Link>
         );
       };
@@ -143,7 +117,7 @@ class ImagesGrid extends Component {
     ${this.props.add};
   `;
 
-    return <Line className={`${s.column}`}>{ImagesFlow}</Line>;
+    return <Line className={`${s.imagesFlow}`}>{ImagesFlow}</Line>;
   }
 }
 

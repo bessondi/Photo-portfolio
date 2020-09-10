@@ -19,26 +19,26 @@ const ViewerGridPortrait = () => {
   `;
 
   return (
-      <Wrapper>
-        <ImageViewer
-            collection={portraitFullSize}
-            closeImagePath='/portraits'
-        />
-        <ImagesGrid
-            direction='row'
-            wrap='wrap'
-            width='auto'
-            maxWidth='auto'
-            maxHeight='300px'
-            radius='0'
-            margin='10px'
-            padding='0'
-            justify='center'
-            hoverNone
-            add=''
-            content={portraitsForGridSection}
-        />
-      </Wrapper>
+    <Wrapper>
+      <ImageViewer
+        collection={portraitFullSize}
+        closeImagePath='/portraits'
+      />
+      <ImagesGrid
+        direction='row'
+        wrap='wrap'
+        width='auto'
+        maxWidth='auto'
+        maxHeight='300px'
+        radius='0'
+        margin='10px'
+        padding='0'
+        justify='center'
+        hoverNone
+        add=''
+        content={portraitsForGridSection}
+      />
+    </Wrapper>
   );
 };
 

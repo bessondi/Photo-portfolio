@@ -19,26 +19,26 @@ const ViewerGridModels = () => {
   `;
 
   return (
-      <Wrapper>
-        <ImageViewer
-            collection={modelsFullSize}
-            closeImagePath='/models-tests'
-        />
-        <ImagesGrid
-            direction='row'
-            wrap='wrap'
-            width='auto'
-            maxWidth='auto'
-            maxHeight='300px'
-            radius='0'
-            margin='10px'
-            padding='0'
-            justify='center'
-            hoverNone
-            add=''
-            content={modelsForGridSection}
-        />
-      </Wrapper>
+    <Wrapper>
+      <ImageViewer
+        collection={modelsFullSize}
+        closeImagePath='/models-tests'
+      />
+      <ImagesGrid
+        direction='row'
+        wrap='wrap'
+        width='auto'
+        maxWidth='auto'
+        maxHeight='300px'
+        radius='0'
+        margin='10px'
+        padding='0'
+        justify='center'
+        hoverNone
+        add=''
+        content={modelsForGridSection}
+      />
+    </Wrapper>
   );
 };
 

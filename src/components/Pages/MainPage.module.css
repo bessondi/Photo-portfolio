@@ -1,7 +1,8 @@
 .overlay {
   position: relative;
   display: block;
-  max-width: 500px;
+  width: 100%;
+  max-width: 576px;
   max-height: 700px;
 }
 
@@ -11,26 +12,31 @@
   transition: all .3s ease-in-out;
 }
 
-.column:nth-child(1) {
+.imagesFlow:nth-child(1) {
   margin-left: 10px;
 }
-.column:nth-child(4) {
+
+.imagesFlow:nth-child(4) {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 576px) {
-  .column:nth-child(3) {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .column:nth-child(1) {
+  .imagesFlow:nth-child(1) {
     margin-left: 0;
   }
 
-  .column:nth-child(2),
-  .column:nth-child(4) {
+  .imagesFlow:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .imagesFlow:nth-child(3) {
+    margin-right: 10px;
+  }
+
+  .imagesFlow:nth-child(2),
+  .imagesFlow:nth-child(4) {
     display: none;
   }
 }
