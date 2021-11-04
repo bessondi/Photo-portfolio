@@ -1,6 +1,3 @@
-.activeLink {
-  color: mediumpurple;
-}
-.activeLinkAbout {
-  color: #C4148C;
+.activeLink li {
+  color: #000000;
 }

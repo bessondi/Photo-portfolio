@@ -1,13 +1,12 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
-
 import styled from "styled-components";
 import s from "./Header.module.css";
 import NavSideBar from "./NavMenu/NavSideBar";
 
-function Header() {
 
+function Header() {
   const randomColor = function getRandomColor() {
     let characters = "0123456789ABCDEF";
     let color = "#";
@@ -16,10 +15,10 @@ function Header() {
     }
     return color;
   };
+
   function getRandomNumber(low, high) {
     return Math.floor(Math.random() * (high - low + 1)) + low;
   }
-
 
   const Word = styled.ul`
     display: flex;
@@ -29,9 +28,10 @@ function Header() {
     transition: all 2.5s ease;
     &:hover {
       transition: all 0.2s ease;
-      transform: scale(1.2);
+      transform: scale(1.3);
       color: ${randomColor};
     }
+
     @media screen and (max-width: 992px) {
       &:hover {
         color: #333;
@@ -75,26 +75,29 @@ function Header() {
 
   const Title = styled.div`
     font-size: 2.5rem;
-    font-weight: 900;
     line-height: 90%;
     font-family: "Circe Extra Bold", sans-serif;
+    transform: scale(1);
+    transition: transform 1s ease;
+
     & > :last-child {
       position: relative;
       left: 12px;
     }
-    transition: all 1s ease;
+    
     &:hover {
-      transition: all 0.5s ease;
-      transform: translateX(5px);
+      transform: scale(1.05);
+      transition: transform 0.5s ease;
     }
+
     @media screen and (max-width: 576px) {
       font-size: 2rem;
     }
-    @media screen and (max-width: 992px) {
-      &:hover {
-        transform: translateX(0);
-      }
-    }
+    //@media screen and (max-width: 992px) {
+    //  &:hover {
+    //    transform: scale(1);
+    //  }
+    //}
   `;
 
   const Nav = styled.nav`
@@ -102,30 +105,30 @@ function Header() {
     justify-content: space-around;
     width: 700px;
     margin-right: -25px;
-    transition: all 0.5s ease;
     @media screen and (max-width: 992px) {
       display: none;
     }
     @media screen and (min-width: 1200px) {
       width: 800px;
-      transition: all 0.5s ease;
     }
   `;
 
   const NavItem = styled.span`
     display: inline-block;
     font-size: 1.5rem;
-    font-weight: 700;
     font-family: "Circe Bold", sans-serif;
-    transition: all 0.5s ease;
+    color: #858585;
+    transform: scale(1);
+    transition: transform 1s ease;
+
     &:hover {
-      color: #5f23bc;
-      transition: all 0.3s ease;
-      transform: translateX(-5px); 
+      transition: transform 0.5s ease;
+      transform: scale(1.1);
     }
+
     @media screen and (max-width: 1200px) {
       font-size: 1.5rem;
-    } 
+    }
     @media screen and (min-width: 1200px) {
       font-size: 1.8rem;
     }
@@ -164,23 +167,76 @@ function Header() {
 
         <Nav>
           <NavLink to="/beauty" activeClassName={s.activeLink}>
-            <NavItem>beauty</NavItem>
+            <NavItem>
+              <Word>
+                <Letter>b</Letter>
+                <Letter>e</Letter>
+                <Letter>a</Letter>
+                <Letter>u</Letter>
+                <Letter>t</Letter>
+                <Letter>y</Letter>
+              </Word>
+            </NavItem>
           </NavLink>
 
           <NavLink to="/product-photography" activeClassName={s.activeLink}>
-            <NavItem>product</NavItem>
+            <NavItem>
+              <Word>
+                <Letter>p</Letter>
+                <Letter>r</Letter>
+                <Letter>o</Letter>
+                <Letter>d</Letter>
+                <Letter>u</Letter>
+                <Letter>c</Letter>
+                <Letter>t</Letter>
+              </Word>
+            </NavItem>
           </NavLink>
 
           <NavLink to="/portraits" activeClassName={s.activeLink}>
-            <NavItem>portrait</NavItem>
+            <NavItem>
+              <Word>
+                <Letter>p</Letter>
+                <Letter>o</Letter>
+                <Letter>r</Letter>
+                <Letter>t</Letter>
+                <Letter>r</Letter>
+                <Letter>a</Letter>
+                <Letter>i</Letter>
+                <Letter>t</Letter>
+              </Word>
+            </NavItem>
           </NavLink>
 
           <NavLink to="/models-tests" activeClassName={s.activeLink}>
-            <NavItem>models tests</NavItem>
+            <NavItem>
+              <Word>
+                <Letter>m</Letter>
+                <Letter>o</Letter>
+                <Letter>d</Letter>
+                <Letter>e</Letter>
+                <Letter>l</Letter>
+                <Letter>s</Letter>
+                <Letter>&nbsp;</Letter>
+                <Letter>t</Letter>
+                <Letter>e</Letter>
+                <Letter>s</Letter>
+                <Letter>t</Letter>
+                <Letter>s</Letter>
+              </Word>
+            </NavItem>
           </NavLink>
 
-          <NavLink to="/about" activeClassName={s.activeLinkAbout}>
-            <NavItem>about</NavItem>
+          <NavLink to="/about" activeClassName={s.activeLink}>
+            <NavItem>
+              <Word>
+                <Letter>a</Letter>
+                <Letter>b</Letter>
+                <Letter>o</Letter>
+                <Letter>u</Letter>
+                <Letter>t</Letter>
+              </Word>
+            </NavItem>
           </NavLink>
         </Nav>
       </Wrapper>

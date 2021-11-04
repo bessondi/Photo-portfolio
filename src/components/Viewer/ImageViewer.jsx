@@ -144,7 +144,10 @@ const ImageViewer = (props) => {
         <React.Fragment>
           <Wrapper>
             <ImageCloser/>
-            <Image src={item.picture} alt="Image"/>
+            <picture>
+              <source srcSet={item.pictureWebp} type="image/webp"/>
+              <Image src={item.picture} alt="Image"/>
+            </picture>
             {item.pathId <= 1 ?
               null :
               <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>

@@ -1,13 +1,10 @@
-import React, {Component} from 'react';
-import {HashLink as Link} from "react-router-hash-link";
+import React, { Component } from 'react';
+import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
-
 import s from './NavSideBar.module.css';
-
 import instagram from "../../img/icons/instagram.svg";
 import telegram from "../../img/icons/telegram.svg";
 import facebook from "../../img/icons/facebook.svg";
-import github from '../../img/icons/github.svg'
 
 
 class NavSideBar extends Component {
@@ -19,12 +16,10 @@ class NavSideBar extends Component {
   }
 
   toggleMenuClass = () => {
-    let currentState = this.state.activeMenu;
-    this.setState({activeMenu: !currentState});
+    this.setState({ activeMenu: !this.state.activeMenu });
   };
 
   render() {
-
     const List = styled.ul`
       display: flex;
       margin: auto;
@@ -32,7 +27,7 @@ class NavSideBar extends Component {
       align-content: center;
     `;
     const ListItems = styled.li`
-      &>a {
+      & > a {
         font-size: 3rem;
         font-family: "Circe Extra Bold", sans-serif;
         color: #fff;
@@ -40,8 +35,8 @@ class NavSideBar extends Component {
           font-size: 2rem;
         }
       }
-      
-      &>a:hover {
+
+      & > a:hover {
         color: #5f23bc;
       }
     `;
@@ -59,11 +54,13 @@ class NavSideBar extends Component {
       font-family: "Circe Extra Bold", sans-serif;
       color: #fff;
       text-align: center;
-      transition: all 0.3s ease;  
+      transition: all 0.3s ease;
+
       &:hover {
         transform: scale(1.05);
-        transition: all 0.3s ease;  
+        transition: all 0.3s ease;
       }
+
       @media screen and (max-width: 576px) {
         font-size: 2rem;
       }
@@ -83,53 +80,52 @@ class NavSideBar extends Component {
       display: block;
       width: 50px;
       height: 50px;
-      transition: all 0.3s ease;  
+      transition: all 0.3s ease;
       margin: 0 10px;
       filter: invert(94%) sepia(0%) saturate(7494%) hue-rotate(317deg) brightness(106%) contrast(109%);
     `;
 
     return (
-        <React.Fragment>
+      <React.Fragment>
 
-          <div className={s.navMenuBtn}>
-            <button className={this.state.activeMenu
-                ? `${s.menuBtn} ${s.menuBtn_active}`
-                : `${s.menuBtn}`}
-                    onClick={this.toggleMenuClass}>
-              <span/>
-            </button>
-          </div>
+        <div className={s.navMenuBtn}>
+          <button className={this.state.activeMenu
+            ? `${s.menuBtn} ${s.menuBtn_active}`
+            : `${s.menuBtn}`}
+                  onClick={this.toggleMenuClass}>
+            <span/>
+          </button>
+        </div>
 
-          <div
-              className={this.state.activeMenu
-                  ? `${s.leftMenuSection_active}`
-                  : `${s.leftMenuSection_closed}`}
-          >
-            <List>
-              <ListItems><Link to='/beauty' onClick={this.toggleMenuClass}>Beauty</Link></ListItems>
-              <ListItems><Link to='/product-photography' onClick={this.toggleMenuClass}>Product</Link></ListItems>
-              <ListItems><Link to='/portraits' onClick={this.toggleMenuClass}>Portraits</Link></ListItems>
-              <ListItems><Link to='/models-tests' onClick={this.toggleMenuClass}>Models Tests</Link></ListItems>
-            </List>
-          </div>
+        <div
+          className={this.state.activeMenu
+            ? `${s.leftMenuSection_active}`
+            : `${s.leftMenuSection_closed}`}
+        >
+          <List>
+            <ListItems><Link to='/beauty' onClick={this.toggleMenuClass}>Beauty</Link></ListItems>
+            <ListItems><Link to='/product-photography' onClick={this.toggleMenuClass}>Product</Link></ListItems>
+            <ListItems><Link to='/portraits' onClick={this.toggleMenuClass}>Portraits</Link></ListItems>
+            <ListItems><Link to='/models-tests' onClick={this.toggleMenuClass}>Models Tests</Link></ListItems>
+          </List>
+        </div>
 
-          <div className={this.state.activeMenu
-              ? `${s.rightMenuSection_active}`
-              : `${s.rightMenuSection_closed}`}
-          >
-            <Contacts>
-              <Link to='/about' onClick={this.toggleMenuClass}><ContactsTitle>About</ContactsTitle></Link>
-              <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
-              <SocialMedia>
-                <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-                <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
-                <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
-                <a href='https://github.com/bessondi'><Icon src={github} alt='github'/></a>
-              </SocialMedia>
-            </Contacts>
-          </div>
+        <div className={this.state.activeMenu
+          ? `${s.rightMenuSection_active}`
+          : `${s.rightMenuSection_closed}`}
+        >
+          <Contacts>
+            <Link to='/about' onClick={this.toggleMenuClass}><ContactsTitle>About</ContactsTitle></Link>
+            <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
+            <SocialMedia>
+              <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
+              <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
+              <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+            </SocialMedia>
+          </Contacts>
+        </div>
 
-        </React.Fragment>
+      </React.Fragment>
     )
   }
 }

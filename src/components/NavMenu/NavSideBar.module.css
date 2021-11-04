@@ -71,9 +71,9 @@
     display: none;
     /*opacity: 0;*/
     /*visibility: hidden;*/
-    /*animation-duration: 1s;*/
-    /*animation: hideRightSection 1s;*/
-    /*transition: all 0.3s ease-in-out;*/
+    animation-duration: 1s;
+    animation: hideRightSection 1s;
+    transition: all 0.3s ease-in-out;
   }
 
   .leftMenuSection_active {

@@ -25,6 +25,8 @@ class ImagesGrid extends Component {
             &:hover {
               opacity: 0.7;
               transition: 0.3s;
+              box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+              border-radius: 10px;
             }
           }
         `;
@@ -34,9 +36,11 @@ class ImagesGrid extends Component {
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          background-color: gray;
+          object-fit: cover;
+          background-color: #dadada;
           width: 100%;
           height: 100%;
+          max-height: 400px;
           border-radius: 10px;
           animation-duration: 1s;
           animation-name: showPic;
@@ -46,7 +50,10 @@ class ImagesGrid extends Component {
           <Wrapper>
             <Link to={images[id].path}>
               <LazyLoad>
-                <Image src={images[id].picture} alt="Image"/>
+                <picture>
+                  <source srcSet={images[id].pictureWebp} type="image/webp"/>
+                  <Image src={images[id].picture} alt="Image"/>
+                </picture>
               </LazyLoad>
             </Link>
           </Wrapper>

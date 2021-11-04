@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
-import Img from '../../img/me.jpg'
+import Img from '../../img/jpg/me.jpg'
+import ImgWebp from '../../img/webp/me.webp'
 import instagram from '../../img/icons/instagram.svg'
 import telegram from '../../img/icons/telegram.svg'
 import facebook from '../../img/icons/facebook.svg'
-import github from '../../img/icons/github.svg'
 
 
 function About() {
-
   const Wrapper = styled.div`
     width: 100%;
     max-width: 1600px;
@@ -23,11 +21,10 @@ function About() {
   const Grid = styled.div`
     display: grid;
     grid-gap: 25px;
-    grid-template-rows:  1fr auto;
+    grid-template-rows: 1fr;
     grid-template-columns: auto 400px 500px auto;
     grid-template-areas:
-      ". photo description ."
-      ". . social .";
+      ". photo description .";
       
     @media screen and (max-width: 992px) {
       display: flex;
@@ -35,20 +32,20 @@ function About() {
       justify-content: space-between;
       margin: 0 auto;
       padding: 0 20px;
-      min-height: 800px;
       max-width: 500px;
     }
     @media screen and (max-width: 576px) {
-      grid-template-rows:  repeat(3, auto);
+      grid-template-rows:  repeat(2, auto);
       grid-template-columns: repeat(3, auto);
       grid-template-areas:
         ". photo ."
-        ". description ."
-        ". social .";
+        ". description .";
     }
   `;
-  const Image = styled.img`
+  const Picture = styled.picture`
     grid-area: photo;
+  `;
+  const Image = styled.img`
     margin: auto;
     display: block;
     background-position: center;
@@ -92,7 +89,7 @@ function About() {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-top: -70px;
+    margin-top: 100px;
     margin-left: -15px;
     
     @media screen and (max-width: 992px) {
@@ -105,12 +102,10 @@ function About() {
     width: 40px;
     height: 40px;
     margin: 0 15px;
-    transition: all 0.3s ease;  
     
     &:hover {
-      filter: invert(18%) sepia(89%) saturate(2896%) hue-rotate(258deg) brightness(83%) contrast(103%);
+      filter: invert(18%) sepia(89%) saturate(2896%) hue-rotate(258deg);
       transform: scale(1.1);
-      transition: all 0.3s ease;  
     }
   `;
 
@@ -118,23 +113,26 @@ function About() {
     <Wrapper>
       <Grid>
 
-        <Image src={Img} alt="About"/>
+        <Picture>
+          <source srcSet={ImgWebp} type="image/webp"/>
+          <Image src={Img} alt="About"/>
+        </Picture>
 
         <Description>
-          Dmitry Bessonov is a Russian commercial photographer, designer and frontend developer.<br/><br/>
-          Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
-          desire, and lifelong experience.<br/><br/>
-          Based in Russia, St. Petersburg / worldwide available.<br/><br/>
+          Dmitry Bessonov is a Russian commercial photographer. Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
+          desire, and lifelong experience.
+          <br/>
+          Based in Russia, St. Petersburg / worldwide available.
+          <br/><br/>
           Dmitry accessible for commercial and editorial assignments and can be contacted via email <Mail
           href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud.com</Mail>
-        </Description>
 
-        <SocialMedia>
-          <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-          <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
-          <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
-          <a href='https://github.com/bessondi'><Icon src={github} alt='github'/></a>
-        </SocialMedia>
+          <SocialMedia>
+            <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
+            <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
+            <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+          </SocialMedia>
+        </Description>
 
       </Grid>
     </Wrapper>

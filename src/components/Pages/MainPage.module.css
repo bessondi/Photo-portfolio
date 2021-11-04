@@ -9,7 +9,7 @@
 .overlay:hover > .overlayDescription {
   z-index: 2;
   opacity: 0.8;
-  transition: all .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 .imagesFlow:nth-child(1) {
