@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import ImagesGrid from "./ImagesGrid";
 import ImageViewer from "./ImageViewer";
@@ -23,4 +23,4 @@ const Viewer = ({pathForClose, component, content}) => {
   );
 };
 
-export default Viewer;
+export default memo(Viewer);

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import {HashLink as Link} from 'react-router-hash-link';
 import {Route} from "react-router-dom";
-
+import Loader from "react-loader-spinner";
 
 const ImageViewer = (props) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const imageLoaded = () => setIsLoading(true);
+  const setImageLoadingToInitialState = () => setIsLoading(false);
 
   const {closeImagePath} = props,
     imageCollection = props.collection;
@@ -25,16 +28,34 @@ const ImageViewer = (props) => {
       background-color: #fff;
       z-index: 10;
     `;
+    const LoaderWrapper = styled.div`
+      position: absolute;
+      left: 46%;
+      top: 46%;
+      background-color: #fff;
+      @media screen and (max-width: 576px) {
+        left: 40%;
+        top: 45%;
+      }
+    `;
+    // const Picture = styled.picture`
+    //   display: flex;
+    //   margin: auto;
+    //   max-width: 85%;
+    //   height: 85%;
+    //   animation-duration: 1s;
+    //   animation-name: showPic;
+    // `;
     const Image = styled.img`
       display: block;
       margin: auto;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      max-width: 85%;
-      max-height: 85%;
+      max-width: 100%;
+      max-height: 100%;
       animation-duration: 1s;
-      animation-name: showPic;
+      //animation-name: showPic;
     `;
     const ImageChangerBtn = styled.div`
       display: flex;
@@ -144,20 +165,36 @@ const ImageViewer = (props) => {
         <React.Fragment>
           <Wrapper>
             <ImageCloser/>
-            <picture>
-              <source srcSet={item.pictureWebp} type="image/webp"/>
-              <Image src={item.picture} alt="Image"/>
-            </picture>
+
+            {
+              !isLoading ?
+              <LoaderWrapper>
+                <Loader
+                  type="Oval"
+                  color="#dadada"
+                  height={100}
+                  width={100}
+                  timeout={2000}
+                />
+              </LoaderWrapper>
+              : null
+            }
+
+            {/*<Picture >*/}
+            {/*  <source srcSet={item.pictureWebp} type="image/webp"/>*/}
+              <Image src={item.picture} alt="Image" loading="lazy" onLoad={imageLoaded}/>
+            {/*</Picture>*/}
+
             {item.pathId <= 1 ?
               null :
               <Link to={closeImagePath + '/' + (parseInt(item.pathId) - 1)}>
-                <ImageChangerBtn leftSide='20'/>
+                <ImageChangerBtn leftSide='20' onClick={setImageLoadingToInitialState}/>
               </Link>
             }
             {item.pathId >= imageCollection.length ?
               null :
               <Link to={closeImagePath + '/' + (parseInt(item.pathId) + 1)}>
-                <ImageChangerBtn rightSide='20'/>
+                <ImageChangerBtn rightSide='20' onClick={setImageLoadingToInitialState}/>
               </Link>
             }
           </Wrapper>

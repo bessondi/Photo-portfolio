@@ -52,7 +52,7 @@ class ImagesGrid extends Component {
               <LazyLoad>
                 <picture>
                   <source srcSet={images[id].pictureWebp} type="image/webp"/>
-                  <Image src={images[id].picture} alt="Image"/>
+                  <Image src={images[id].picture} alt="Image" loading="lazy"/>
                 </picture>
               </LazyLoad>
             </Link>

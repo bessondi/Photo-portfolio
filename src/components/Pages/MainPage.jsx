@@ -5,7 +5,6 @@ import Flow from "../Viewer/ImagesFlow";
 
 
 function MainPage({canUseWebp}) {
-  console.log(canUseWebp)
 
   const {
     beautyForMainPage,

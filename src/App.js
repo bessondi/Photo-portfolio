@@ -9,7 +9,6 @@ import Page404 from "./components/Pages/Page404";
 import "./App.css";
 import { ContentData } from "./components/ContentData";
 
-
 export default function App() {
   const [isUseWebp, setWebpUsable] = useState(null);
 

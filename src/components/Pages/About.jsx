@@ -119,7 +119,7 @@ function About() {
         </Picture>
 
         <Description>
-          Dmitry Bessonov is a Russian commercial photographer. Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
+          Dmitry Bessonov is a Russian photographer and digital artist. Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
           desire, and lifelong experience.
           <br/>
           Based in Russia, St. Petersburg / worldwide available.
