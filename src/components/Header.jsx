@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import s from "./Header.module.css";
 import NavSideBar from "./NavMenu/NavSideBar";
+import { analyticsHelper } from './analyticsHelper/analyticsHelper'
 
 
 function Header() {
@@ -18,6 +19,10 @@ function Header() {
 
   function getRandomNumber(low, high) {
     return Math.floor(Math.random() * (high - low + 1)) + low;
+  }
+
+  function navMenuItemClick (category, action, label) {
+    analyticsHelper(category, action, label);
   }
 
   const Word = styled.ul`
@@ -139,7 +144,7 @@ function Header() {
       <Wrapper>
 
         <PageTitle>
-          <Link to="/">
+          <Link to="/" onClick={() => navMenuItemClick('header_nav(desktop)', 'logo_click', 'logo')}>
             <Title>
               <Word>
                 <Letter>d</Letter>
@@ -166,7 +171,7 @@ function Header() {
         <NavSideBar/>
 
         <Nav>
-          <NavLink to="/beauty" activeClassName={s.activeLink}>
+          <NavLink to="/beauty" activeClassName={s.activeLink} onClick={() => navMenuItemClick('header_nav(desktop)', 'nav_item_click', 'beauty')}>
             <NavItem>
               <Word>
                 <Letter>b</Letter>
@@ -179,7 +184,7 @@ function Header() {
             </NavItem>
           </NavLink>
 
-          <NavLink to="/product-photography" activeClassName={s.activeLink}>
+          <NavLink to="/product-photography" activeClassName={s.activeLink} onClick={() => navMenuItemClick('header_nav(desktop)', 'nav_item_click', 'product')}>
             <NavItem>
               <Word>
                 <Letter>p</Letter>
@@ -193,7 +198,7 @@ function Header() {
             </NavItem>
           </NavLink>
 
-          <NavLink to="/portraits" activeClassName={s.activeLink}>
+          <NavLink to="/portraits" activeClassName={s.activeLink} onClick={() => navMenuItemClick('header_nav(desktop)', 'nav_item_click', 'portraits')}>
             <NavItem>
               <Word>
                 <Letter>p</Letter>
@@ -208,7 +213,7 @@ function Header() {
             </NavItem>
           </NavLink>
 
-          <NavLink to="/models-tests" activeClassName={s.activeLink}>
+          <NavLink to="/models-tests" activeClassName={s.activeLink} onClick={() => navMenuItemClick('header_nav(desktop)', 'nav_item_click', 'tests')}>
             <NavItem>
               <Word>
                 <Letter>m</Letter>
@@ -227,7 +232,7 @@ function Header() {
             </NavItem>
           </NavLink>
 
-          <NavLink to="/about" activeClassName={s.activeLink}>
+          <NavLink to="/about" activeClassName={s.activeLink} onClick={() => navMenuItemClick('header_nav(desktop)', 'nav_item_click', 'about')}>
             <NavItem>
               <Word>
                 <Letter>a</Letter>

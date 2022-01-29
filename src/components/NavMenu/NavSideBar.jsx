@@ -5,6 +5,7 @@ import s from './NavSideBar.module.css';
 import instagram from "../../img/icons/instagram.svg";
 import telegram from "../../img/icons/telegram.svg";
 import facebook from "../../img/icons/facebook.svg";
+import { analyticsHelper } from '../analyticsHelper/analyticsHelper'
 
 
 class NavSideBar extends Component {
@@ -14,6 +15,11 @@ class NavSideBar extends Component {
       activeMenu: false
     };
   }
+
+  navMenuItemClick = (category, action, label) => {
+    analyticsHelper(category, action, label);
+    this.toggleMenuClass();
+  };
 
   toggleMenuClass = () => {
     this.setState({ activeMenu: !this.state.activeMenu });
@@ -103,10 +109,10 @@ class NavSideBar extends Component {
             : `${s.leftMenuSection_closed}`}
         >
           <List>
-            <ListItems><Link to='/beauty' onClick={this.toggleMenuClass}>Beauty</Link></ListItems>
-            <ListItems><Link to='/product-photography' onClick={this.toggleMenuClass}>Product</Link></ListItems>
-            <ListItems><Link to='/portraits' onClick={this.toggleMenuClass}>Portraits</Link></ListItems>
-            <ListItems><Link to='/models-tests' onClick={this.toggleMenuClass}>Models Tests</Link></ListItems>
+            <ListItems><Link to='/beauty' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'nav_click', 'beauty')}>Beauty</Link></ListItems>
+            <ListItems><Link to='/product-photography' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'nav_click', 'product')}>Product</Link></ListItems>
+            <ListItems><Link to='/portraits' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'nav_click', 'portraits')}>Portraits</Link></ListItems>
+            <ListItems><Link to='/models-tests' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'nav_click', 'tests')}>Models Tests</Link></ListItems>
           </List>
         </div>
 
@@ -115,12 +121,12 @@ class NavSideBar extends Component {
           : `${s.rightMenuSection_closed}`}
         >
           <Contacts>
-            <Link to='/about' onClick={this.toggleMenuClass}><ContactsTitle>About</ContactsTitle></Link>
-            <Mail href='mailto:dmitrybessonov@icloud.com'>dmitrybessonov@icloud.com</Mail>
+            <Link to='/about' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'nav_click', 'about')}><ContactsTitle>About</ContactsTitle></Link>
+            <Mail href='mailto:dmitrybessonov@icloud.com' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'email_click', 'email')}>dmitrybessonov@icloud.com</Mail>
             <SocialMedia>
-              <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-              <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
-              <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+              <a href='https://www.instagram.com/bessondi' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'social_media_click', 'instagram')}><Icon src={instagram} alt='instagram'/></a>
+              <a href='https://t.me/bessondi' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'social_media_click', 'telegram')}><Icon src={telegram} alt='telegram'/></a>
+              <a href='https://www.facebook.com/bessondi' onClick={() => this.navMenuItemClick('sidebar_menu(mobile)', 'social_media_click', 'facebook')}><Icon src={facebook} alt='facebook'/></a>
             </SocialMedia>
           </Contacts>
         </div>

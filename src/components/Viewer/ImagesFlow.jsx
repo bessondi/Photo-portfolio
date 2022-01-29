@@ -44,8 +44,6 @@ const Flow = props => {
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: cover;
-        width: 100%;
-        height: 100%;
         min-width: 200px;
         min-height: 400px;
         margin: 10px 0;

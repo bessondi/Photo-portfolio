@@ -5,6 +5,7 @@ import ImgWebp from '../../img/webp/me.webp'
 import instagram from '../../img/icons/instagram.svg'
 import telegram from '../../img/icons/telegram.svg'
 import facebook from '../../img/icons/facebook.svg'
+import { analyticsHelper } from '../analyticsHelper/analyticsHelper'
 
 
 function About() {
@@ -109,6 +110,10 @@ function About() {
     }
   `;
 
+  function socialItemClick (category, action, label) {
+    analyticsHelper(category, action, label);
+  }
+
   return (
     <Wrapper>
       <Grid>
@@ -119,18 +124,18 @@ function About() {
         </Picture>
 
         <Description>
-          Dmitry Bessonov is a Russian photographer and digital artist. Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
+          Dmitry Bessonov is a photographer and digital artist. Dmitry's work illustrates his passion for the person as an individual in conjunction with his emotions,
           desire, and lifelong experience.
           <br/>
           Based in Russia, St. Petersburg / worldwide available.
           <br/><br/>
           Dmitry accessible for commercial and editorial assignments and can be contacted via email <Mail
-          href="mailto:dmitrybessonov@icloud.com">dmitrybessonov@icloud.com</Mail>
+          href="mailto:dmitrybessonov@icloud.com" onClick={() => socialItemClick('about_page', 'mail_click', 'email')}>dmitrybessonov@icloud.com</Mail>
 
           <SocialMedia>
-            <a href='https://www.instagram.com/bessondi'><Icon src={instagram} alt='instagram'/></a>
-            <a href='https://t.me/bessondi'><Icon src={telegram} alt='telegram'/></a>
-            <a href='https://www.facebook.com/bessondi'><Icon src={facebook} alt='facebook'/></a>
+            <a href='https://www.instagram.com/bessondi' onClick={() => socialItemClick('about_page', 'social_click', 'instagram')}><Icon src={instagram} alt='instagram'/></a>
+            <a href='https://t.me/bessondi' onClick={() => socialItemClick('about_page', 'social_click', 'telegram')}><Icon src={telegram} alt='telegram'/></a>
+            <a href='https://www.facebook.com/bessondi' onClick={() => socialItemClick('about_page', 'social_click', 'facebook')}><Icon src={facebook} alt='facebook'/></a>
           </SocialMedia>
         </Description>
 

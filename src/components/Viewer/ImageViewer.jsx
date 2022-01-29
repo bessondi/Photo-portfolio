@@ -30,12 +30,11 @@ const ImageViewer = (props) => {
     `;
     const LoaderWrapper = styled.div`
       position: absolute;
-      left: 46%;
-      top: 46%;
-      background-color: #fff;
+      left: 49%;
+      top: 48%;
       @media screen and (max-width: 576px) {
-        left: 40%;
-        top: 45%;
+        left: 43%;
+        top: 48%;
       }
     `;
     // const Picture = styled.picture`
@@ -52,8 +51,8 @@ const ImageViewer = (props) => {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 80%;
+      max-height: 80%;
       animation-duration: 1s;
       //animation-name: showPic;
     `;
@@ -172,9 +171,9 @@ const ImageViewer = (props) => {
                 <Loader
                   type="Oval"
                   color="#dadada"
-                  height={100}
-                  width={100}
-                  timeout={2000}
+                  height={50}
+                  width={50}
+                  // timeout={2000}
                 />
               </LoaderWrapper>
               : null

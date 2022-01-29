@@ -38,12 +38,16 @@ class ImagesGrid extends Component {
           background-size: cover;
           object-fit: cover;
           background-color: #dadada;
-          width: 100%;
-          height: 100%;
-          max-height: 400px;
+          min-height: 10px;
+          max-height: 200px;
+          max-width: 350px;
           border-radius: 10px;
           animation-duration: 1s;
           animation-name: showPic;
+          @media screen and (max-width: 767px) {
+            max-height: 100%;
+            max-width: 100%;
+          }
         `;
 
         return (

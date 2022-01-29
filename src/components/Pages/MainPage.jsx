@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ContentData } from "../ContentData";
 import Flow from "../Viewer/ImagesFlow";
+import { analyticsHelper } from '../analyticsHelper/analyticsHelper'
 
 
 function MainPage({canUseWebp}) {
@@ -27,6 +28,10 @@ function MainPage({canUseWebp}) {
     }
   `;
 
+  function imagesFlowClick (category, action, label) {
+    analyticsHelper(category, action, label);
+  }
+
   const Waterfall = () => {
     const Waterfall = styled.div`
       display: flex;
@@ -44,10 +49,18 @@ function MainPage({canUseWebp}) {
 
     return (
       <Waterfall>
-        <Flow slide="slideUp" duration="100s" content={beautyForMainPage} canUseWebp={canUseWebp}/>
-        <Flow slide="slideDown" duration="130s" content={productForMainPage} canUseWebp={canUseWebp}/>
-        <Flow slide="slideUp" duration="150s" content={portraitsForMainPage} canUseWebp={canUseWebp}/>
-        <Flow slide="slideDown" duration="90s" content={modelsForMainPage} canUseWebp={canUseWebp}/>
+        <Flow slide="slideUp" duration="100s" content={beautyForMainPage} canUseWebp={canUseWebp}
+          onClick={() => imagesFlowClick('main_page_flow', 'flow_click', 'beauty')}
+        />
+        <Flow slide="slideDown" duration="130s" content={productForMainPage} canUseWebp={canUseWebp}
+          onClick={() => imagesFlowClick('main_page_flow', 'flow_click', 'product')}
+        />
+        <Flow slide="slideUp" duration="150s" content={portraitsForMainPage} canUseWebp={canUseWebp}
+          onClick={() => imagesFlowClick('main_page_flow', 'flow_click', 'portraits')}
+        />
+        <Flow slide="slideDown" duration="90s" content={modelsForMainPage} canUseWebp={canUseWebp}
+          onClick={() => imagesFlowClick('main_page_flow', 'flow_click', 'tests')}
+        />
       </Waterfall>
     );
   };
